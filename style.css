@@ -389,7 +389,7 @@ margin:20px 0;
 }
 
 .about-intro{
-padding:80px 10%;
+padding:60px 10%;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
@@ -485,6 +485,7 @@ border-radius:30px;
 
 .about-intro{
 grid-template-columns:1fr;
+padding: 20px;
 }
 
 .about-overlay h1{
@@ -1242,11 +1243,6 @@ form{
     margin:auto;
 }
 
-.form-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
 
 .form-group{
     text-align:left;
@@ -1274,6 +1270,9 @@ form{
 
 .full{
     grid-column:span 2;
+}
+.form-group.full{
+    grid-column:1 / -1;
 }
 
 button{
@@ -1320,16 +1319,8 @@ button{
     font-size:1.2rem;
 }
 
-@media(max-width:768px){
 
-    .form-grid{
-        grid-template-columns:1fr;
-    }
 
-    .booking-hero-content h1{
-        font-size:2.5rem;
-    }
-}
 .contact-hero{
     height:60vh;
     background:
@@ -1356,7 +1347,7 @@ button{
 
 .contact-info{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:20px;
     padding:80px 8%;
     background:#faf7f4;
@@ -1395,17 +1386,6 @@ button{
     margin:auto;
 }
 
-.form-group{
-    text-align:left;
-}
-
-.form-group input,
-.form-group textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #ddd;
-    border-radius:10px;
-}
 
 .full{
     grid-column:span 2;
@@ -1491,6 +1471,12 @@ button{
 
     .form-grid{
         grid-template-columns:1fr;
+        display: grid;
+        
+        
+    }
+    .form-group{
+        width: 100%;
     }
 
     .contact-form-section h2,
