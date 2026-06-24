@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yolyhairsaloon.netlify.app/sitemap.xml
+Sitemap: https://yolyhairsaloonn.netlify.app/sitemap.xml
