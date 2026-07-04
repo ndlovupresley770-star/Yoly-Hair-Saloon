@@ -75,7 +75,7 @@ body{
 }
 .home-service-card,
 .service-card {
-     display: flex;
+    display: flex;
     flex-direction: column;   
     align-items: center;      
     background: #fff;
@@ -84,6 +84,7 @@ body{
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding: 20px;
     transition: transform .3s ease
+    
 }
 .home-service-card img,
 .service-card img {
@@ -183,7 +184,7 @@ body{
     background:
     linear-gradient(rgba(0,0,0,.6),
     rgba(0,0,0,.6)),
-    url('images/yoly.jpg');
+    url('images/yoly.webp');
 
     background-size:cover;
     background-position:center;
@@ -530,7 +531,7 @@ body{
 
 .about-hero{
 height:90vh;
-background:url(images/pexels-cottonbro-3992877.jpg);
+background:url(images/home-about.webp);
 background-size:cover;
 background-position:center;
 display:flex;
@@ -778,7 +779,7 @@ gap:20px;
     height:160vh;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url('images/services-background.jpg');
+    url('images/services-background.webp');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -1043,7 +1044,7 @@ gap:20px;
     height:80vh;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url('images/gallery-hero.jpg');
+    url('images/gallery-hero.webp');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -1399,7 +1400,7 @@ gap:20px;
     height:90vh;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url('images/pricing-hero.jpg');
+    url('images/pricing-hero.webp');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -1828,7 +1829,7 @@ button{
     height:80vh;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url('images/contact-hero.jpg');
+    url('images/contact-hero.webp');
     background-size:cover;
     background-position:center;
     display:flex;
