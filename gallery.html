@@ -5,338 +5,1137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Salon Gallery | Hairstyles by Our Orange Farm Stylists</title>
     <meta name="description" content="Browse our gallery to see beautiful braids, weaves, haircuts, colouring, and hairstyles created by our experienced Orange Farm hair stylists.">
-    <link rel="stylesheet" href="style.css">
+    
+     <!--Preconnect Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-       <header>
-    <nav class="navbar">
+<!-- LUXURY TOP UTILITY BAR -->
+<div class="top-bar">
+    <div class="container top-bar-container">
 
-        <a href="index.html" class="logo">
-            Yoly Hair Salon
-        </a>
+        <!-- Left: Location & Working Hours -->
+        <div class="top-bar-left">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Gauteng</span>
+            </div>
+            <div class="top-bar-divider"></div>
+            <div class="top-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="pricing.html" >Pricing</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           
+        <!-- Right: Direct Phone, WhatsApp & Social Links -->
+        <div class="top-bar-right">
+            <a href="tel:+27796336537" class="top-bar-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>+27 79 633 6537</span>
+            </a>
+            <a href="https://wa.me/27796336537" target="_blank" class="top-bar-link whatsapp-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+            </a>
             
-        </ul>
-         
+            <div class="top-bar-divider"></div>
 
+            <div class="top-bar-socials">
+                <a href="https://wa.me/27796336537" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <header id="header">
+       <nav class="navbar">
+
+    <!-- Compact Luxury Logo Mark -->
+    <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="logo-text">
+            <span class="brand-name">YOLY</span>
+            <span class="brand-sub">SALON</span>
+        </div>
+    </a>
+
+    <!-- Navigation Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="services.html" >Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Right Side Actions -->
+    <div class="nav-actions">
         <a href="booking.html" class="nav-btn">
             Book Now
         </a>
 
-    </nav>
-</header>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 
-<!-- GALLERY HERO -->
-
+</nav>
+    </header>
+<!-- GALLERY HERO SECTION -->
 <section class="gallery-hero">
+    <!-- Ambient Radial Glow Overlay -->
+    <div class="hero-glow"></div>
 
-    <div class="gallery-hero-content">
+    <div class="container">
+        <div class="gallery-hero-card">
 
-         <h2>Our Recent Hairstyles</h2> <br><br>
+            <!-- Luxury Gold Badge Tag -->
+            <span class="gallery-badge">
+                <i class="fa-solid fa-camera-retro"></i> Yoly Hair Salon Portfolio
+            </span>
 
-    <p>
-        Browse some of our latest hairstyles completed by our experienced hairstylists.
-        Each style is carefully created using professional techniques and quality products
-        to ensure long-lasting results and healthy-looking hair.
+            <!-- Main SEO Heading -->
+            <h1>Our Recent Hairstyles & Hair Artistry</h1>
 
+            <!-- Keyword-Rich Content Blocks -->
+            <p class="gallery-lead">
+                Welcome to the official <strong>hair gallery for Yoly Hair Salon in Orange Farm</strong>. Explore our portfolio showcasing recent transformations, protective hairstyles, and custom installations crafted with precision by our master stylists.
+            </p>
+
+            <p class="gallery-body">
+                Each hairstyle represents our commitment to scalp care, edge preservation, and flawless finish. From painless <strong>knotless braids</strong> and seamless <strong>lace wig melts</strong> to vibrant custom color and natural hair transformations, discover inspiration for your next salon visit.
+            </p>
+
+            <!-- Quick Category Pills Grid -->
+            <div class="gallery-pills-grid">
+                <div class="gallery-pill-item">
+                    <i class="fa-solid fa-scissors"></i>
+                    <span>Knotless & Box Braids</span>
+                </div>
+                <div class="gallery-pill-item">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>Lace Wig Installs</span>
+                </div>
+                <div class="gallery-pill-item">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Custom Color & Balayage</span>
+                </div>
+                <div class="gallery-pill-item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Natural Crown Care</span>
+                </div>
+            </div>
+
+            <!-- Action CTA Buttons -->
+            <div class="gallery-hero-actions">
+                <a href="#gallery-grid" class="btn-gallery-primary">
+                    <i class="fa-solid fa-images"></i> Browse Gallery
+                </a>
+                <a href="booking.html" class="btn-gallery-secondary">
+                    <i class="fa-regular fa-calendar-check"></i> Book Your Transformation
+                </a>
+            </div>
+
+        </div>
     </div>
-
 </section>
-
-<!-- INTRODUCTION -->
-
+<!-- GALLERY INTRO SECTION -->
 <section class="gallery-intro">
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-header">
+            <span class="sub-title">
+                <i class="fa-solid fa-sparkles"></i> Artistry & Excellence
+            </span>
+            <h2>Beauty Through Our Work</h2>
+            <p>At Yoly Hair Salon, every hairstyle tells a story of transformation, confidence, and crown care. Explore our curated showcase of modern beauty created right here in Orange Farm.</p>
+        </div>
 
-    <h2>Beauty Through Our Work</h2>
+        <!-- 3-COLUMN FEATURE GRID -->
+        <div class="gallery-intro-grid">
 
-    <p>
-        At Yoly Hair Salon, every hairstyle tells a story. We take pride
-        in delivering beautiful, modern and customized looks that help
-        our clients express their unique personalities.
-    </p>
+            <!-- CARD 1 -->
+            <div class="intro-feature-card">
+                <div class="feature-card-icon">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3>Precision Braiding Art</h3>
+                <p>
+                    Clean partings, weightless knotless braids, and intricate stitch patterns crafted to preserve your natural hair elasticity and protect your hairline.
+                </p>
+                <div class="feature-card-footer">
+                    <span><i class="fa-solid fa-circle-check"></i> Clean Partings</span>
+                    <span><i class="fa-solid fa-circle-check"></i> Scalp Safe</span>
+                </div>
+            </div>
 
-    <p>
-        Browse through our gallery to discover the quality, creativity
-        and attention to detail that make our salon a trusted beauty destination.
-    </p>
+            <!-- CARD 2 -->
+            <div class="intro-feature-card highlight-card">
+                <div class="card-badge-top">Most Requested</div>
+                <div class="feature-card-icon">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h3>Undetectable Lace Melts</h3>
+                <p>
+                    Custom bleached knots, skin-matched HD lace customization, and seamless frontal installs that mimic a natural, growing hairline.
+                </p>
+                <div class="feature-card-footer">
+                    <span><i class="fa-solid fa-circle-check"></i> Flawless Finish</span>
+                    <span><i class="fa-solid fa-circle-check"></i> HD Lace Experts</span>
+                </div>
+            </div>
 
+            <!-- CARD 3 -->
+            <div class="intro-feature-card">
+                <div class="feature-card-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3>Vibrant Tones & Glow</h3>
+                <p>
+                    Conditioning color blends, rich dimensional balayage, and hydrating steam treatments that leave hair noticeably soft, silky, and luminous.
+                </p>
+                <div class="feature-card-footer">
+                    <span><i class="fa-solid fa-circle-check"></i> Rich Pigments</span>
+                    <span><i class="fa-solid fa-circle-check"></i> High Gloss</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- QUICK PROOF BANNER BAR -->
+        <div class="gallery-proof-bar">
+            <div class="proof-item">
+                <strong>100%</strong>
+                <span>Real Client Photos</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+                <strong>0%</strong>
+                <span>Heavy Filters</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+                <strong>5/5★</strong>
+                <span>Client Ratings</span>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<!-- FEATURED GALLERY -->
+<!-- FEATURED GALLERY SECTION -->
+<section class="featured-gallery" id="gallery-grid">
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-images"></i> Client Showcase
+            </span>
+            <h2>Featured Hairstyles Gallery</h2>
+            <p>Explore our most popular protective styles, lace wig melts, and natural crown transformations crafted at Yoly Hair Salon in Orange Farm.</p>
+        </div>
 
-<section class="featured-gallery">
+        <!-- CATEGORY FILTER TABS -->
+        <div class="gallery-filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Styles</button>
+            <button class="filter-btn" data-filter="braids">Knotless & Braids</button>
+            <button class="filter-btn" data-filter="wigs">Lace Wigs</button>
+            <button class="filter-btn" data-filter="natural">Natural Care</button>
+            <button class="filter-btn" data-filter="bridal">Bridal & Glam</button>
+        </div>
 
-    <div class="section-heading">
-        <h2>Featured Hairstyles</h2>
-        <p>
-            Explore some of our most popular hairstyles created by our talented stylists.
-        </p>
+        <!-- GALLERY GRID -->
+        <div class="gallery-cards">
+
+            <!-- ITEM 1: NATURAL CARE -->
+            <div class="gallery-item" data-category="natural">
+                <div class="gallery-image-wrapper">
+                    <img src="images/naturalhaircare.webp" loading="lazy" alt="Natural Hair Care Service in Orange Farm - Yoly Hair Salon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-leaf"></i> Natural Care</span>
+                        <h3>Hydrated Afro Texture & Curl Care</h3>
+                        <p>Deep moisture restoration and gentle detangling.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2: BRAIDS -->
+            <div class="gallery-item" data-category="braids">
+                <div class="gallery-image-wrapper">
+                    <img src="images/knotlessbraids.webp" loading="lazy" alt="Knotless Braids in Orange Farm - Yoly Hair Salon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-scissors"></i> Braiding</span>
+                        <h3>Precision Knotless Box Braids</h3>
+                        <p>Tension-free parting and lightweight daily wear.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 3: NATURAL CARE -->
+            <div class="gallery-item" data-category="natural">
+                <div class="gallery-image-wrapper">
+                    <img src="images/naturalhair.webp" loading="lazy" alt="Natural Hair Styling - Yoly Hair Salon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-seedling"></i> Natural Care</span>
+                        <h3>Two-Strand Twist & Silk Press</h3>
+                        <p>Heat-protected shine with natural volume preservation.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 4: BRAIDS & PROTECTIVE -->
+            <div class="gallery-item" data-category="braids">
+                <div class="gallery-image-wrapper">
+                    <img src="images/protective.webp" loading="lazy" alt="Protective Hairstyling in Orange Farm">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-shield-halved"></i> Protective</span>
+                        <h3>Goddess Stitch Cornrows</h3>
+                        <p>Geometric parting adorned with subtle curly accents.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 5: WIGS & GLAM -->
+            <div class="gallery-item" data-category="wigs">
+                <div class="gallery-image-wrapper">
+                    <img src="images/yoly.webp" loading="lazy" alt="Lace Wig Installation - Yoly Hair Salon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-crown"></i> Wig Melt</span>
+                        <h3>Seamless Frontal Lace Melt</h3>
+                        <p>Invisible hairline customization with custom bleaching.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 6: BRIDAL -->
+            <div class="gallery-item" data-category="bridal">
+                <div class="gallery-image-wrapper">
+                    <img src="images/bridalhair.webp" loading="lazy" alt="Bridal Hair Styling in Orange Farm">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category-tag"><i class="fa-solid fa-gem"></i> Bridal & Glam</span>
+                        <h3>Luxury Bridal Updo & Waves</h3>
+                        <p>Elegant special occasion styling with long-lasting hold.</p>
+                        <a href="booking.html" class="gallery-card-btn">
+                            <i class="fa-regular fa-calendar-check"></i> Book Style
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-    <div class="gallery-cards">
-            <div class="gallery-item">
-            <img src="images/naturalhaircare.webp" loading="lazy"alt="Hair Styling">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/knotlessbraids.webp" alt="Knotless Braids">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/naturalhair.webp" loading="lazy" alt="Natural Hair Care">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/protective.webp" loading="lazy" alt="Protective Styling">
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/yoly.webp" loading="lazy" alt="Bridal Hair">
-        </div>
-         <div class="gallery-item">
-            <img src="images/bridalhair.webp" loading="lazy" alt="Bridal Hair">
-        </div>
- 
-    </section>
+</section>
    
 
-<!-- SERVICE CATEGORIES -->
-
+<!-- STYLE CATEGORIES SECTION -->
 <section class="gallery-categories">
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-layer-group"></i> Explore Our Expertise
+            </span>
+            <h2>Our Style Categories</h2>
+            <p>From protective braiding masterpieces to seamless lace melts and restorative crown care, discover our full spectrum of hair artistry in Orange Farm.</p>
+        </div>
 
-    <div class="section-heading">
-        <h2>Our Style Categories</h2>
+        <!-- 4-COLUMN GLASS CARD GRID -->
+        <div class="categories-container">
+
+            <!-- CATEGORY 1: BRAIDING -->
+            <div class="category-card">
+                <div class="category-card-top">
+                    <div class="category-icon-box">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <span class="category-count">01</span>
+                </div>
+                
+                <h3>Braiding & Protective Styles</h3>
+                <p>
+                    Precision knotless braids, box braids, Fulani cornrows, stitch braids, and goddess twists crafted for maximum comfort, zero scalp strain, and long-lasting wear.
+                </p>
+
+                <ul class="category-features">
+                    <li><i class="fa-solid fa-check"></i> Knotless & Box Braids</li>
+                    <li><i class="fa-solid fa-check"></i> Stitch & Tribal Lines</li>
+                    <li><i class="fa-solid fa-check"></i> Tension-Free Edges</li>
+                </ul>
+
+                <a href="booking.html" class="category-link">
+                    <span>Explore Braids</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- CATEGORY 2: COLORING -->
+            <div class="category-card highlight-category">
+                <div class="category-card-top">
+                    <div class="category-icon-box">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <span class="category-count">02</span>
+                </div>
+
+                <h3>Hair Coloring & Tonal Art</h3>
+                <p>
+                    Vibrant custom colors, sun-kissed balayage, dimensional highlights, and low-ammonia toners formulated to elevate your skin tone while preserving hair elasticity.
+                </p>
+
+                <ul class="category-features">
+                    <li><i class="fa-solid fa-check"></i> Dimensional Balayage</li>
+                    <li><i class="fa-solid fa-check"></i> Full Root Touch-Ups</li>
+                    <li><i class="fa-solid fa-check"></i> Post-Color Steam Moisture</li>
+                </ul>
+
+                <a href="booking.html" class="category-link">
+                    <span>Explore Color</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- CATEGORY 3: NATURAL CARE -->
+            <div class="category-card">
+                <div class="category-card-top">
+                    <div class="category-icon-box">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <span class="category-count">03</span>
+                </div>
+
+                <h3>Natural Crown & Scalp Therapy</h3>
+                <p>
+                    Healthy moisture-locking solutions, detangling washes, protein reconstructors, and heat-free protective styling designed to nourish natural textured hair.
+                </p>
+
+                <ul class="category-features">
+                    <li><i class="fa-solid fa-check"></i> Hydrating Scalp Steams</li>
+                    <li><i class="fa-solid fa-check"></i> Length Retention Trims</li>
+                    <li><i class="fa-solid fa-check"></i> Two-Strand Twists & Coils</li>
+                </ul>
+
+                <a href="booking.html" class="category-link">
+                    <span>Explore Natural Care</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- CATEGORY 4: SPECIAL OCCASION -->
+            <div class="category-card">
+                <div class="category-card-top">
+                    <div class="category-icon-box">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <span class="category-count">04</span>
+                </div>
+
+                <h3>Bridal & Special Occasion Glam</h3>
+                <p>
+                    High-glam bridal updos, sleek pressing, Hollywood waves, and event-ready lace installations created to make you look unforgettable on your special day.
+                </p>
+
+                <ul class="category-features">
+                    <li><i class="fa-solid fa-check"></i> Customized Bridal Packages</li>
+                    <li><i class="fa-solid fa-check"></i> Special Event Updos</li>
+                    <li><i class="fa-solid fa-check"></i> Long-Lasting Glam Hold</li>
+                </ul>
+
+                <a href="booking.html" class="category-link">
+                    <span>Explore Event Glam</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="categories-container">
-
-        <div class="category-card">
-            <h3>Braiding Styles</h3>
-            <p>
-                Elegant knotless braids, box braids, tribal braids,
-                cornrows and protective hairstyles.
-            </p>
-        </div>
-
-        <div class="category-card">
-            <h3>Hair Coloring</h3>
-            <p>
-                Vibrant colors, highlights, balayage and custom color transformations.
-            </p>
-        </div>
-
-        <div class="category-card">
-            <h3>Natural Hair Care</h3>
-            <p>
-                Healthy styling solutions designed for natural hair textures.
-            </p>
-        </div>
-
-        <div class="category-card">
-            <h3>Special Occasion Styling</h3>
-            <p>
-                Wedding, graduation and event hairstyles created to impress.
-            </p>
-        </div>
-
-    </div>
-
 </section>
 
-<!-- BEFORE & AFTER -->
-
+<!-- BEFORE & AFTER TRANSFORMATIONS SECTION -->
 <section class="before-after">
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Real Results & Transformations
+            </span>
+            <h2>Before & After Transformations</h2>
+            <p>Witness the power of expert care, moisture restoration, and precision styling created right here at Yoly Hair Salon in Orange Farm.</p>
+        </div>
 
-    <div class="section-heading">
-        <h2>Before & After Transformations</h2>
-        <p>
-            See the amazing transformations achieved by our expert stylists.
-        </p>
+        <!-- TRANSFORMATION CARDS GRID -->
+        <div class="transformation-container">
+
+            <!-- TRANSFORMATION CARD 1: HAIR TREATMENT -->
+            <div class="transformation-card">
+                <div class="transformation-image-split">
+                    <!-- Before Image -->
+                    <div class="split-box">
+                        <img src="images/before1.jpg" loading="lazy" alt="Dry and damaged hair before treatment - Yoly Hair Salon">
+                        <span class="split-badge before-badge">Before</span>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="split-divider">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <!-- After Image -->
+                    <div class="split-box">
+                        <img src="images/hair-treatment-in-orange-farm.webp" loading="lazy" alt="Restored glossy hair after moisture treatment in Orange Farm">
+                        <span class="split-badge after-badge">After</span>
+                    </div>
+                </div>
+
+                <div class="transformation-content">
+                    <span class="transformation-category"><i class="fa-solid fa-spa"></i> Restorative Care</span>
+                    <h3>Deep Hydration & Protein Repair</h3>
+                    <p>
+                        Transformed dry, brittle strands into silky, high-shine hair using our signature steam hydration treatment and scalp massage therapy.
+                    </p>
+                    <div class="transformation-meta">
+                        <span><i class="fa-solid fa-clock"></i> 1.5 Hours</span>
+                        <a href="booking.html" class="btn-transform-book">Book Treatment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSFORMATION CARD 2: COLOR -->
+            <div class="transformation-card">
+                <div class="transformation-image-split">
+                    <!-- Before Image -->
+                    <div class="split-box">
+                        <img src="images/before2.jpg" loading="lazy" alt="Uneven hair color before service - Yoly Hair Salon">
+                        <span class="split-badge before-badge">Before</span>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="split-divider">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <!-- After Image -->
+                    <div class="split-box">
+                        <img src="images/haircolouring-in-orange-farm.webp" loading="lazy" alt="Vibrant balayage color result - Yoly Hair Salon Orange Farm">
+                        <span class="split-badge after-badge">After</span>
+                    </div>
+                </div>
+
+                <div class="transformation-content">
+                    <span class="transformation-category"><i class="fa-solid fa-palette"></i> Custom Color</span>
+                    <h3>Dimensional Honey Balayage</h3>
+                    <p>
+                        Corrected faded undertones with seamless balayage highlights and a low-ammonia gloss toner to boost shine and richness.
+                    </p>
+                    <div class="transformation-meta">
+                        <span><i class="fa-solid fa-clock"></i> 3.0 Hours</span>
+                        <a href="booking.html" class="btn-transform-book">Book Color</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSFORMATION CARD 3: PROTECTIVE BRAIDS -->
+            <div class="transformation-card">
+                <div class="transformation-image-split">
+                    <!-- Before Image -->
+                    <div class="split-box">
+                        <img src="images/before.jpg" loading="lazy" alt="Natural hair before protective braiding - Yoly Hair Salon">
+                        <span class="split-badge before-badge">Before</span>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="split-divider">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <!-- After Image -->
+                    <div class="split-box">
+                        <img src="images/knotlessbraids.webp" loading="lazy" alt="Neat knotless braids transformation in Orange Farm">
+                        <span class="split-badge after-badge">After</span>
+                    </div>
+                </div>
+
+                <div class="transformation-content">
+                    <span class="transformation-category"><i class="fa-solid fa-scissors"></i> Protective Braids</span>
+                    <h3>Tension-Free Knotless Braids</h3>
+                    <p>
+                        Cleansed, stretched, and braided natural hair into lightweight, painless knotless braids designed to protect edges and promote growth.
+                    </p>
+                    <div class="transformation-meta">
+                        <span><i class="fa-solid fa-clock"></i> 3.5 Hours</span>
+                        <a href="booking.html" class="btn-transform-book">Book Braids</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRANSFORMATION CARD 4: WIG INSTALLATION -->
+            <div class="transformation-card">
+                <div class="transformation-image-split">
+                    <!-- Before Image -->
+                    <div class="split-box">
+                        <img src="images/naturalhaircare.webp" loading="lazy" alt="Braided foundation before lace wig installation">
+                        <span class="split-badge before-badge">Before</span>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="split-divider">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <!-- After Image -->
+                    <div class="split-box">
+                        <img src="images/wiginstallationinorangefarm.webp" loading="lazy" alt="Flawless lace wig melt transformation in Orange Farm">
+                        <span class="split-badge after-badge">After</span>
+                    </div>
+                </div>
+
+                <div class="transformation-content">
+                    <span class="transformation-category"><i class="fa-solid fa-crown"></i> Wig Melt</span>
+                    <h3>Seamless Frontal Lace Installation</h3>
+                    <p>
+                        Prepared a flat braiding base, bleached the lace knots, and melted HD lace for an undetectable, skin-matched hairline.
+                    </p>
+                    <div class="transformation-meta">
+                        <span><i class="fa-solid fa-clock"></i> 2.5 Hours</span>
+                        <a href="booking.html" class="btn-transform-book">Book Wig Melt</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="transformation-container">
-
-        <div class="transformation-card">
-            <img src="images/before1.jpg" alt="">
-            <h3>Hair Treatment Transformation</h3>
-            <p>
-                Restored moisture, strength and shine through our premium treatment services.
-            </p>
-        </div>
-
-        <div class="transformation-card">
-            <img src="images/before2.jpg" alt="">
-            <h3>Color Transformation</h3>
-            <p>
-                Professional coloring techniques that enhance beauty and confidence.
-            </p>
-        </div>
-
-        <div class="transformation-card">
-            <img src="images/before.jpg" alt="">
-            <h3>Protective Styling</h3>
-            <p>
-                Beautiful braiding styles designed to protect and strengthen hair.
-            </p>
-        </div>
-
-    </div>
-
 </section>
 
-<!-- CLIENT REVIEWS -->
-
+<!-- CLIENT REVIEWS SECTION -->
 <section class="gallery-testimonials">
+    <!-- Ambient Background Glow -->
+    <div class="reviews-glow"></div>
 
-    <div class="section-heading">
-        <h2>What Our Clients Say</h2>
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-star"></i> Loved By Our Community
+            </span>
+            <h2>What Our Clients Say</h2>
+            <p>Read authentic feedback from our valued clients in Orange Farm who trust Yoly Hair Salon for flawless protective styles, lace installs, and scalp care.</p>
+        </div>
+
+        <!-- 3-CARD TESTIMONIAL GRID -->
+        <div class="testimonial-grid">
+
+            <!-- REVIEW CARD 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-card-top">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <p class="review-text">
+                    "Absolutely amazing service! I got knotless braids done, and they were so neat, lightweight, and completely painless on my edges. My style lasted for 6 weeks without frizz!"
+                </p>
+
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">
+                        <span>LN</span>
+                    </div>
+                    <div class="reviewer-details">
+                        <h4>Lerato N.</h4>
+                        <span class="review-service-tag"><i class="fa-solid fa-check-circle"></i> Knotless Braids Client</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW CARD 2 (FEATURED HIGHLIGHT) -->
+            <div class="testimonial-card highlight-review">
+                <div class="testimonial-card-top">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <p class="review-text">
+                    "Yoly Hair Salon is hands down the best salon in Orange Farm! The lace frontal melt was so seamless people thought it was my real scalp. Professional staff and beautiful ambience."
+                </p>
+
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar gold-avatar">
+                        <span>KM</span>
+                    </div>
+                    <div class="reviewer-details">
+                        <h4>Khumo M.</h4>
+                        <span class="review-service-tag"><i class="fa-solid fa-crown"></i> Wig Installation Client</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEW CARD 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-card-top">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+
+                <p class="review-text">
+                    "My hair was severely damaged from bleaching, but their steam hydration treatment completely revived my natural curls. Very knowledgeable stylists who genuinely care about hair health."
+                </p>
+
+                <div class="reviewer-info">
+                    <div class="reviewer-avatar">
+                        <span>TS</span>
+                    </div>
+                    <div class="reviewer-details">
+                        <h4>Thandi S.</h4>
+                        <span class="review-service-tag"><i class="fa-solid fa-check-circle"></i> Hair Treatment Client</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- OVERALL RATING BADGE BAR -->
+        <div class="reviews-summary-bar">
+            <div class="rating-box">
+                <strong>4.9 / 5.0</strong>
+                <div class="summary-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span>Based on 150+ Verified Client Reviews</span>
+            </div>
+            <a href="https://wa.me/27796336537" target="_blank" class="btn-review-cta">
+                <i class="fa-brands fa-whatsapp"></i> Book Your Appointment
+            </a>
+        </div>
+
     </div>
-
-    <div class="testimonial-grid">
-
-        <div class="testimonial-card">
-            <p>
-                "Absolutely amazing service. My hairstyle looked stunning
-                and lasted for weeks."
-            </p>
-            <h4>- Happy Client</h4>
+</section>
+<!-- WHY BROWSE OUR GALLERY SECTION -->
+<section class="gallery-why-section">
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-crown"></i> Proven Quality & Artistry
+            </span>
+            <h2>Why Browse Our Gallery?</h2>
+            <p>Explore real, unedited client transformations and find your next signature look crafted by master hair stylists in Orange Farm.</p>
         </div>
 
-        <div class="testimonial-card">
-            <p>
-                "Professional staff, beautiful salon and excellent customer service."
-            </p>
-            <h4>- Loyal Customer</h4>
-        </div>
+        <div class="gallery-why-grid">
 
-        <div class="testimonial-card">
-            <p>
-                "The best salon experience I've had. Highly recommended."
-            </p>
-            <h4>- Satisfied Client</h4>
+            <!-- LEFT FEATURE CARD -->
+            <div class="why-featured-card">
+                <div class="why-featured-badge">
+                    <i class="fa-solid fa-gem"></i>
+                    <span>Authentic Beauty Portfolio</span>
+                </div>
+                <h3>Inspiration Backed By Uncompromising Precision</h3>
+                <p>
+                    Every photo in our showcase reflects actual work completed inside <strong>Yoly Hair Salon</strong>. We believe in total transparency—no stock photos, heavy blurring, or misleading filters—just clean partings, seamless lace melts, and healthy natural hair.
+                </p>
+                <div class="why-stats-row">
+                    <div class="why-stat-item">
+                        <strong>100%</strong>
+                        <span>Real Client Results</span>
+                    </div>
+                    <div class="why-stat-divider"></div>
+                    <div class="why-stat-item">
+                        <strong>5★</strong>
+                        <span>Craftsmanship</span>
+                    </div>
+                </div>
+                <a href="booking.html" class="btn-why-cta">
+                    <i class="fa-regular fa-calendar-check"></i> Book Your Style Today
+                </a>
+            </div>
+
+            <!-- RIGHT REASONS GRID -->
+            <div class="why-reasons-grid">
+
+                <!-- REASON 1 -->
+                <div class="why-reason-card">
+                    <div class="reason-icon-box">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Authentic Master Craftsmanship</h3>
+                        <p>Verify our high-end finishing, razor-sharp partings, and gentle tension control across real clients before scheduling your appointment.</p>
+                    </div>
+                </div>
+
+                <!-- REASON 2 -->
+                <div class="why-reason-card">
+                    <div class="reason-icon-box">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Inspiration For Your Next Look</h3>
+                        <p>Discover trendy knotless braiding patterns, dimensional balayage shades, and sleek lace installs tailored to complement your skin tone.</p>
+                    </div>
+                </div>
+
+                <!-- REASON 3 -->
+                <div class="why-reason-card">
+                    <div class="reason-icon-box">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Versatile Category Variety</h3>
+                        <p>Explore an extensive range of protective braids, full weave installations, custom coloring, and restorative natural hair care styles.</p>
+                    </div>
+                </div>
+
+                <!-- REASON 4 -->
+                <div class="why-reason-card">
+                    <div class="reason-icon-box">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <div class="reason-content">
+                        <h3>Styles For Every Event</h3>
+                        <p>From low-maintenance everyday protective styles to high-glam bridal and graduation hair, find the ideal look for any occasion.</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
-
 </section>
-<section class="gallery-section">
-
-    <h2>Why Browse Our Gallery?</h2>
-
-    <ul>
-
-        <li>See real hairstyles created by our talented team.</li>
-
-        <li>Get inspiration for your next hairstyle.</li>
-
-        <li>Explore different braid, weave, and colouring styles.</li>
-
-        <li>View our quality workmanship before booking.</li>
-
-        <li>Discover hairstyles suitable for every occasion.</li>
-
-    </ul>
-
-</section>
+<!-- GALLERY CTA SECTION -->
 <section class="gallery-cta">
+    <!-- Glowing Ambient Radial Aura -->
+    <div class="gallery-cta-glow"></div>
 
-    <h2>Love What You See?</h2>
+    <div class="container">
+        <div class="gallery-cta-card">
 
-    <p>
-        If one of our hairstyles has inspired you, we'd love to create your next look.
-        Book your appointment today and let our experienced hairstylists help you achieve
-        a style that complements your personality and enhances your confidence.
-    </p>
+            <!-- Luxury Gold Badge Tag -->
+            <span class="gallery-cta-badge">
+                <i class="fa-solid fa-sparkles"></i> Claim Your Crown Transformation
+            </span>
 
-    <a href="booking.html" class="btn-book">
-        Book Your Appointment
-    </a>
+            <!-- Main SEO Heading -->
+            <h2>Love What You See?</h2>
 
+            <!-- Lead Copy -->
+            <p class="gallery-cta-lead">
+                If one of our hairstyles has inspired you, let us bring that vision to life. Book your appointment at <strong>Yoly Hair Salon in Orange Farm</strong> today, and let our master stylists craft a flawless, confidence-boosting look tailored specifically to you.
+            </p>
+
+            <!-- Quick Guarantee Badges -->
+            <div class="gallery-cta-features">
+                <div class="cta-feature-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Clean Partings & Edge Protection</span>
+                </div>
+                <div class="cta-feature-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Premium Hydrating Products</span>
+                </div>
+                <div class="cta-feature-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Friendly & Punctual Service</span>
+                </div>
+            </div>
+
+            <!-- Action CTA Buttons -->
+            <div class="gallery-cta-actions">
+                <a href="booking.html" class="btn-gallery-cta-primary">
+                    <i class="fa-regular fa-calendar-check"></i> Book Your Appointment
+                </a>
+                <a href="https://wa.me/27796336537" target="_blank" class="btn-gallery-cta-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<!-- SOCIALS SECTION -->
-
+<!-- SOCIAL SHOWCASE SECTION -->
 <section class="social-showcase">
+    <!-- Ambient Radial Background Glow -->
+    <div class="social-glow"></div>
 
-    <h2>Follow Our Beauty Journey</h2>
+    <div class="container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-heading">
+            <span class="sub-title">
+                <i class="fa-solid fa-hashtag"></i> Join Our Online Community
+            </span>
+            <h2>Follow Our Beauty Journey</h2>
+            <p>Stay connected with Yoly Hair Salon on social media for daily hairstyle inspiration, behind-the-scenes transformations, exclusive promotions, and client reveals in Orange Farm.</p>
+        </div>
 
-    <p>
-        Stay connected with our latest hairstyles, promotions and salon updates.
-    </p>
+        <!-- SOCIAL MEDIA CARDS GRID -->
+        <div class="social-cards-grid">
 
-   <a href="https://www.facebook.com/profile.php?id=61577067400106" target="_blank">
-    Follow Us On Facebook
-</a>
-<a href="https://www.tiktok.com/@presley752?_r=1&_t=ZS-96zHRFLYAx3">
-    Follow Us On TikTok
-</a>
+            <!-- FACEBOOK CARD -->
+            <div class="social-card facebook-card">
+                <div class="social-card-top">
+                    <div class="social-icon-box fb-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <span class="social-platform-badge">Facebook</span>
+                </div>
 
+                <h3>Yoly Hair Salon Page</h3>
+                <p>
+                    Like and follow our official Facebook page for salon updates, client reviews, video tutorials, and direct special event announcements.
+                </p>
 
+                <div class="social-card-footer">
+                    <div class="social-meta">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Daily Updates & Promos</span>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61577067400106" target="_blank" rel="noopener noreferrer" class="btn-social-action btn-facebook">
+                        Follow On Facebook <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TIKTOK CARD -->
+            <div class="social-card tiktok-card">
+                <div class="social-card-top">
+                    <div class="social-icon-box tt-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <span class="social-platform-badge">TikTok</span>
+                </div>
+
+                <h3>@presley752 on TikTok</h3>
+                <p>
+                    Watch short-form video reels, before-and-after braid reveals, wig melting techniques, and quick hair maintenance tips.
+                </p>
+
+                <div class="social-card-footer">
+                    <div class="social-meta">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Hairstyle Transformation Reels</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@presley752?_r=1&_t=ZS-96zHRFLYAx3" target="_blank" rel="noopener noreferrer" class="btn-social-action btn-tiktok">
+                        Follow On TikTok <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INSTAGRAM / COMMUNITY PROMPT BAR -->
+        <div class="social-community-bar">
+            <div class="community-text">
+                <i class="fa-solid fa-camera"></i>
+                <span>Tagged us in your new look? Use <strong>#YolyHairSalon</strong> for a chance to be featured on our official pages!</span>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 
 <footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- BRAND -->
-        <div class="footer-box">
-            <h2>Yoly Hair Salon</h2>
-            <p>
-                Luxury hair styling, braiding, coloring and beauty treatments.
-                We bring out your beauty and confidence.
+      <div class="container">
+        <div class="footer-container">
+          <!-- BRAND COLUMN -->
+          <div class="footer-box footer-brand">
+            <a href="index.html" class="footer-logo">
+              <div class="logo-icon-wrap">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div class="logo-text">
+                <span class="brand-name">YOLY</span>
+                <span class="brand-sub">SALON</span>
+              </div>
+            </a>
+            <p class="brand-desc">
+              Orange Farm’s premier destination for luxury hair styling,
+              precision braiding, custom coloring, and restorative hair care.
             </p>
-        </div>
+            <div class="footer-socials">
+              <a
+                href="https://wa.me/27796336537"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
 
-        <!-- QUICK LINKS -->
-        <div class="footer-box">
+          <!-- QUICK LINKS COLUMN -->
+          <div class="footer-box">
             <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="booking.html">Booking</a>
-            <a href="contact.html">Contact</a>
-            
-        </div>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-angle-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-angle-right"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html"
+                  ><i class="fa-solid fa-angle-right"></i> Gallery</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html"
+                  ><i class="fa-solid fa-angle-right"></i> Pricing</a
+                >
+              </li>
+              <li>
+                <a href="booking.html"
+                  ><i class="fa-solid fa-angle-right"></i> Booking</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-angle-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <!-- SERVICES -->
-        <div class="footer-box">
+          <!-- SERVICES COLUMN -->
+          <div class="footer-box">
             <h3>Our Services</h3>
-            <p>Braiding</p>
-            <p>Bridal Styling</p>
-            <p>Hair Coloring</p>
-            <p>Hair Treatment</p>
-            <p>Wig Installation</p>
+            <ul class="footer-links">
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Knotless Braids</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Hair Coloring</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Deep Treatments</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Wig Installation</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Bridal Styling</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT COLUMN -->
+          <div class="footer-box footer-contact">
+            <h3>Get In Touch</h3>
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Johannesburg</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+27796336537">+27 79 633 6537</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/27796336537" target="_blank"
+                  >Chat on WhatsApp</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- CONTACT -->
-        <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p>📍 Orange Farm, Johannesburg</p>
-            <p>📞 +27 79 633 6537</p>
-            
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>© 2026 Yoly Hair Salon. All Rights Reserved.</p>
+          <p class="developer-credit">
+            Designed & Developed with <i class="fa-solid fa-heart"></i> by
+            <span>Sam Web Studios</span>
+          </p>
         </div>
-
-    </div>
-
-    <!-- BOTTOM BAR -->
-    <div class="footer-bottom">
-        <p>
-            © 2026 Yoly Hair Salon. All Rights Reserved.
-        </p>
-    </div>
-
-</footer>
+      </div>
+    </footer>
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/27796336537" class="whatsapp-float" target="_blank">
 
@@ -344,6 +1143,6 @@
          alt="WhatsApp">
 
 </a>
-
+<script src="script.js"></script>
 </body>
 </html>

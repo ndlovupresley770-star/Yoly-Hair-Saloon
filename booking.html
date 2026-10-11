@@ -7,288 +7,732 @@
 </title>
 <meta name="description" content="Book your hair appointment online with our professional hair salon in Orange Farm. Fast, simple, and convenient booking.
  Call us on 079 633 6537">
+
+   <!--Preconnect Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-       <header>
-    <nav class="navbar">
+<!-- LUXURY TOP UTILITY BAR -->
+<div class="top-bar">
+    <div class="container top-bar-container">
 
-        <a href="index.html" class="logo">
-            Yoly Hair Salon
-        </a>
+        <!-- Left: Location & Working Hours -->
+        <div class="top-bar-left">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Gauteng</span>
+            </div>
+            <div class="top-bar-divider"></div>
+            <div class="top-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="booking.html" class="active">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           
-        </ul>
-         
+        <!-- Right: Direct Phone, WhatsApp & Social Links -->
+        <div class="top-bar-right">
+            <a href="tel:+27796336537" class="top-bar-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>+27 79 633 6537</span>
+            </a>
+            <a href="https://wa.me/27796336537" target="_blank" class="top-bar-link whatsapp-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            
+            <div class="top-bar-divider"></div>
 
+            <div class="top-bar-socials">
+                <a href="https://wa.me/27796336537" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <header id="header">
+       <nav class="navbar">
+
+    <!-- Compact Luxury Logo Mark -->
+    <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="logo-text">
+            <span class="brand-name">YOLY</span>
+            <span class="brand-sub">SALON</span>
+        </div>
+    </a>
+
+    <!-- Navigation Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="services.html" >Services</a></li>
+        <li><a href="gallery.html" >Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Right Side Actions -->
+    <div class="nav-actions">
         <a href="booking.html" class="nav-btn">
             Book Now
         </a>
 
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</nav>
+    </header>
+
+<!-- HERO & NAVIGATION HEADER -->
+<header class="luxury-header">
+    <nav class="navbar container">
+        <a href="#" class="brand-logo">
+            <i class="fa-solid fa-crown logo-icon"></i>
+            <span>YOLY</span> HAIR SALON
+        </a>
+        <ul class="nav-links">
+            <li><a href="#treatments">Treatments</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#membership">VIP Club</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="https://wa.me/27796336537" class="btn-nav-book" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Book Now
+        </a>
     </nav>
 </header>
 
-<!-- HERO -->
-
 <section class="booking-hero">
+    <!-- Dark Luxury Background Overlay -->
+    <div class="hero-bg-overlay"></div>
 
-    <div class="booking-hero-content">
+    <div class="container hero-container">
+        <div class="booking-hero-content">
+            
+            <span class="hero-badge">
+                <i class="fa-solid fa-sparkles"></i> Premier Salon Experience
+            </span>
 
-        <h1>Book Your Appointment</h1>
+            <h1>Book Your Appointment</h1>
 
-        <p>
-            Schedule your visit with Yoly Hair Salon and let our professionals
-            take care of your beauty and hair needs.
-        </p>
+            <p>
+                Schedule your visit with Yoly Hair Salon and let our master stylists transform your look with precision, care, and luxury treatments.
+            </p>
 
+            <div class="hero-cta-group">
+                <a href="https://wa.me/27796336537" class="btn-hero-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Booking
+                </a>
+                <a href="#treatments" class="btn-hero-secondary">
+                    View Price List
+                </a>
+            </div>
+
+            <!-- Social Proof Highlights -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4.9 ★</span>
+                    <span class="stat-label">Client Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Customized Care</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">VIP</span>
+                    <span class="stat-label">Luxury Atmosphere</span>
+                </div>
+            </div>
+
+        </div>
     </div>
-
 </section>
 
-<!-- BOOKING INFO -->
+<!-- BOOKING PROCESS & CTA -->
+<section class="booking-process-section">
+    <!-- Dark Background Overlay Container -->
+    <div class="booking-bg-overlay"></div>
 
-<section class="booking-info">
+    <div class="container">
+        
+        <!-- Header -->
+        <div class="section-heading">
+            <span class="section-badge">Simple & Seamless</span>
+            <h2>How To Book Your Experience</h2>
+            <p>Reserving your personalized salon transformation is quick, simple, and effortless.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Step 1</h2>
-        <p>Select your preferred service</p>
+        <!-- 4-Step Process Grid -->
+        <div class="booking-steps-grid">
+
+            <!-- Step 1 -->
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h3>Select Service</h3>
+                <p>Browse our luxury treatments, coloring options, or exclusive beauty packages.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <h3>Choose Date & Time</h3>
+                <p>Pick a slot that best fits your schedule through our online portal or WhatsApp.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <h3>Submit Request</h3>
+                <p>Provide your contact details and secure your slot with a nominal deposit.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step-card">
+                <div class="step-number">04</div>
+                <div class="step-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Instant Confirmation</h3>
+                <p>Receive your appointment confirmation along with stylist preparation notes.</p>
+            </div>
+
+        </div>
+
+        <!-- Integrated CTA Banner -->
+        <div class="booking-cta-banner">
+            <div class="cta-banner-content">
+                <div class="cta-banner-text">
+                    <h3>Ready for Your Salon Transformation?</h3>
+                    <p>Book online today or reach out to our team directly via WhatsApp for custom styling advice.</p>
+                </div>
+                <div class="cta-banner-actions">
+                    <a href="https://wa.me/27796336537" class="btn-cta-gold" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <div class="info-box">
-        <h2>Step 2</h2>
-        <p>Choose date & time</p>
-    </div>
-
-    <div class="info-box">
-        <h2>Step 3</h2>
-        <p>Submit your booking request</p>
-    </div>
-
-    <div class="info-box">
-        <h2>Step 4</h2>
-        <p>We confirm your appointment</p>
-    </div>
-
 </section>
 
 <!-- BOOKING FORM -->
-
 <section class="booking-form-section">
-
-    <h2>Appointment Form</h2>
-
-    <form action="https://formspree.io/f/xkoaakko"
-    method="post">
-
-        <div class="form-grid">
-
-            <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" name="fullname" required placeholder="Enter your full name">
+    <div class="container">
+        
+        <div class="booking-form-card">
+            
+            <div class="form-header">
+                <span class="section-badge">Reserve Your Visit</span>
+                <h2>Appointment Form</h2>
+                <p>Fill out your details below to request a tailored session with our salon specialists.</p>
             </div>
 
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" name="phonenumber" required placeholder="+27 79 633 6537">
-            </div>
+            <form action="https://formspree.io/f/xkoaakko" method="POST" class="luxury-form">
 
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" name="emailaddress" required placeholder="example@email.com">
-            </div>
+                <div class="form-grid">
 
-            <div class="form-group">
-                <label>Select Service</label>
-                <select>
-                    <option>Hair Braiding</option>
-                    <option>Hair Styling</option>
-                </select>
-            </div>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user input-icon"></i>
+                            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label>Preferred Stylist</label>
-                <select>
-                    <option>Any Available Stylist</option>
-                    <option>Yoly (Senior Stylist)</option>
-                    <option>Hair Specialist</option>
-                    <option>Braiding Expert</option>
-                </select>
-            </div>
+                    <div class="form-group">
+                        <label for="phonenumber">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone input-icon"></i>
+                            <input type="tel" id="phonenumber" name="phonenumber" required placeholder="+27 79 633 6537">
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label>Preferred Date</label>
-                <input type="date" name="date" required>
-            </div>
+                    <div class="form-group">
+                        <label for="emailaddress">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope input-icon"></i>
+                            <input type="email" id="emailaddress" name="emailaddress" required placeholder="example@email.com">
+                        </div>
+                    </div>
 
-            <div class="form-group">
-                <label>Preferred Time</label>
-                <input type="time" name="time" required>
-            </div>
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-scissors input-icon"></i>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Choose a service...</option>
+                                <option value="Hair Braiding">Hair Braiding</option>
+                                <option value="Hair Styling">Hair Styling</option>
+                                <option value="Deep Conditioning">Deep Conditioning Treatment</option>
+                                <option value="Protein Treatment">Protein Treatment</option>
+                                <option value="Scalp Treatment">Scalp Treatment</option>
+                                <option value="Full Colour">Full Colouring</option>
+                                <option value="Highlights">Highlights</option>
+                                <option value="Colour Touch-Up">Colour Touch-Up</option>
+                            </select>
+                        </div>
+                    </div>
 
-            <div class="form-group full">
-                <label>Special Requests</label>
-                <textarea name="textarea" required placeholder="Tell us anything we should know..."></textarea>
-            </div>
+                    <div class="form-group">
+                        <label for="stylist">Preferred Stylist</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-crown input-icon"></i>
+                            <select id="stylist" name="stylist">
+                                <option value="Any Available Stylist">Any Available Stylist</option>
+                                <option value="Yoly (Senior Stylist)">Yoly (Senior Stylist)</option>
+                                <option value="Hair Specialist">Hair Specialist</option>
+                                <option value="Braiding Expert">Braiding Expert</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-calendar input-icon"></i>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-clock input-icon"></i>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="special_requests">Special Requests</label>
+                        <div class="input-wrapper">
+                            <textarea id="special_requests" name="special_requests" rows="4" placeholder="Tell us about your hair length, preferences, or any questions..."></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-submit-booking">
+                        <i class="fa-solid fa-paper-plane"></i> Book Appointment
+                    </button>
+                    <p class="form-deposit-note">
+                        <i class="fa-solid fa-circle-info"></i> A <strong>R100 deposit</strong> is required upon confirmation to secure your time slot.
+                    </p>
+                </div>
+
+            </form>
 
         </div>
 
-        <button type="submit" >Book Appointment</button>
-
-    </form>
-
+    </div>
 </section>
 
 <!-- SERVICES HIGHLIGHT -->
+<section class="booking-services-section">
+    <div class="container">
 
-<section class="booking-services">
+        <div class="section-heading">
+            <span class="section-badge">Master Craftsmanship</span>
+            <h2>Our Signature Services</h2>
+            <p>Explore our most sought-after salon services, crafted with precision and premium products.</p>
+        </div>
 
-    <div class="section-heading">
-        <h2>Our Popular Services</h2>
+        <div class="service-grid">
+
+            <!-- Service Card 1: Braiding -->
+            <div class="service-card">
+                <div class="service-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=600" alt="Hair Braiding">
+                    <span class="service-tag">Most Popular</span>
+                </div>
+                <div class="service-body">
+                    <div class="service-header">
+                        <h3>Braiding & Weaving</h3>
+                        <span class="service-price">From R250</span>
+                    </div>
+                    <p>Flawless protective styling tailored to your natural beauty and personal style.</p>
+                    <ul class="service-highlights">
+                        <li><i class="fa-solid fa-sparkles"></i> Knotless & Box Braids</li>
+                        <li><i class="fa-solid fa-sparkles"></i> Cornrows & Feed-ins</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-service-book">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card 2: Hair Coloring -->
+            <div class="service-card">
+                <div class="service-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600" alt="Hair Coloring">
+                    <span class="service-tag">Vibrant Shades</span>
+                </div>
+                <div class="service-body">
+                    <div class="service-header">
+                        <h3>Hair Coloring</h3>
+                        <span class="service-price">From R300</span>
+                    </div>
+                    <p>Vibrant, professional color transformations with bond-protecting nourishment.</p>
+                    <ul class="service-highlights">
+                        <li><i class="fa-solid fa-sparkles"></i> Full Tint & Highlights</li>
+                        <li><i class="fa-solid fa-sparkles"></i> Seamless Root Touch-Ups</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-service-book">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card 3: Hair Treatment -->
+            <div class="service-card">
+                <div class="service-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="Hair Treatment">
+                    <span class="service-tag">Restorative Care</span>
+                </div>
+                <div class="service-body">
+                    <div class="service-header">
+                        <h3>Hair Treatment</h3>
+                        <span class="service-price">From R180</span>
+                    </div>
+                    <p>Deep conditioning and protein therapies engineered to restore shine and strength.</p>
+                    <ul class="service-highlights">
+                        <li><i class="fa-solid fa-sparkles"></i> Moisture & Protein Therapy</li>
+                        <li><i class="fa-solid fa-sparkles"></i> Scalp Detox Massage</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-service-book">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Service Card 4: Wig Installation -->
+            <div class="service-card">
+                <div class="service-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=600" alt="Wig Installation">
+                    <span class="service-tag">Flawless Finish</span>
+                </div>
+                <div class="service-body">
+                    <div class="service-header">
+                        <h3>Wig Installation</h3>
+                        <span class="service-price">From R400</span>
+                    </div>
+                    <p>Undetectable, natural lace melting and custom customization for a realistic finish.</p>
+                    <ul class="service-highlights">
+                        <li><i class="fa-solid fa-sparkles"></i> Custom Melt & Plucking</li>
+                        <li><i class="fa-solid fa-sparkles"></i> Secure & Comfortable Fit</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-service-book">Book Service <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="service-grid">
-
-        <div class="service-card">
-            <h3>Braiding</h3>
-            <p>Box braids, knotless, cornrows & more.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Hair Coloring</h3>
-            <p>Vibrant & professional color transformation.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Hair Treatment</h3>
-            <p>Restore strength, shine & health.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Wig Installation</h3>
-            <p>Natural & flawless installation.</p>
-        </div>
-
-    </div>
-
 </section>
 
 <!-- WHY BOOK WITH US -->
+<section class="booking-benefits-section">
+    <div class="container">
 
-<section class="booking-benefits">
+        <div class="section-heading">
+            <span class="section-badge">The Yoly Experience</span>
+            <h2>Why Book With Yoly Hair Salon?</h2>
+            <p>Discover what sets our salon apart and why our valued clients keep coming back.</p>
+        </div>
 
-    <div class="section-heading">
-        <h2>Why Book With Yoly Hair Salon?</h2>
+        <div class="benefits-grid">
+
+            <!-- Card 1: Easy Booking -->
+            <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3>Seamless Booking</h3>
+                <p>Reserve your appointment effortlessly in seconds via our online system or direct instant WhatsApp booking.</p>
+                <div class="benefit-footer-tag">
+                    <i class="fa-solid fa-sparkles"></i> Quick & Effortless
+                </div>
+            </div>
+
+            <!-- Card 2: Professional Stylists -->
+            <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3>Master Stylists</h3>
+                <p>Our experienced hair care specialists bring years of expertise in protective styling, precision coloring, and care.</p>
+                <div class="benefit-footer-tag">
+                    <i class="fa-solid fa-sparkles"></i> Certified Experts
+                </div>
+            </div>
+
+            <!-- Card 3: Flexible Times -->
+            <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h3>Flexible Scheduling</h3>
+                <p>Choose appointment slots that fit seamlessly into your busy lifestyle, including prime weekend hours.</p>
+                <div class="benefit-footer-tag">
+                    <i class="fa-solid fa-sparkles"></i> Tailored Times
+                </div>
+            </div>
+
+            <!-- Card 4: Guaranteed Quality -->
+            <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3>Uncompromised Quality</h3>
+                <p>We use premium, bond-protecting products and personalized techniques for healthy, flawless results every time.</p>
+                <div class="benefit-footer-tag">
+                    <i class="fa-solid fa-sparkles"></i> 100% Satisfaction
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="benefits-grid">
-
-        <div class="benefit-card">
-            <h3>Easy Booking</h3>
-            <p>Simple and fast appointment scheduling process.</p>
-        </div>
-
-        <div class="benefit-card">
-            <h3>Professional Stylists</h3>
-            <p>Experienced beauty experts at your service.</p>
-        </div>
-
-        <div class="benefit-card">
-            <h3>Flexible Times</h3>
-            <p>Choose a time that suits your schedule.</p>
-        </div>
-
-        <div class="benefit-card">
-            <h3>Guaranteed Quality</h3>
-            <p>High-quality salon experience every time.</p>
-        </div>
-
-    </div>
-
 </section>
 
 <!-- CONTACT SUPPORT -->
+<section class="booking-contact-section">
+    <div class="container">
 
-<section class="booking-contact">
+        <div class="booking-contact-card">
+            
+            <div class="section-heading">
+                <span class="section-badge">Here To Assist You</span>
+                <h2>Need Help Booking?</h2>
+                <p>Contact us directly for assistance, custom styling inquiries, or special appointment requests.</p>
+            </div>
 
-    <h2>Need Help Booking?</h2>
+            <div class="contact-details-grid">
 
-    <p>
-        Contact us directly for assistance or special requests.
-    </p>
+                <!-- Phone -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Phone & WhatsApp</span>
+                        <a href="tel:+27796336537" class="contact-value">+27 79 633 6537</a>
+                    </div>
+                    <a href="https://wa.me/27796336537" class="btn-contact-action" target="_blank">
+                        Chat <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
 
-    <div class="contact-details">
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email Support</span>
+                        <a href="mailto:yolandachazinga285@gmail.com" class="contact-value">yolandachazinga285@gmail.com</a>
+                    </div>
+                    <a href="mailto:yolandachazinga285@gmail.com" class="btn-contact-action">
+                        Email <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
 
-        <p>📞 +27 796336537</p>
-        <p>📧 yolandachazinga285@gmail.com</p>
-        <p>📍 Orange Farm, Johannesburg</p>
+                <!-- Location -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Salon Location</span>
+                        <span class="contact-value">Orange Farm, Johannesburg</span>
+                    </div>
+                    <a href="https://maps.google.com/?q=Orange+Farm+Johannesburg" class="btn-contact-action" target="_blank">
+                        Directions <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Operating Hours Sub-card -->
+            <div class="contact-hours-banner">
+                <i class="fa-regular fa-clock"></i>
+                <p><strong>Operating Hours:</strong> Monday – Saturday: 08:00 AM – 18:00 PM | Sunday: By Appointment Only</p>
+            </div>
+
+        </div>
 
     </div>
-
 </section>
+
 <footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- BRAND -->
-        <div class="footer-box">
-            <h2>Yoly Hair Salon</h2>
-            <p>
-                Luxury hair styling, braiding, coloring and beauty treatments.
-                We bring out your beauty and confidence.
+      <div class="container">
+        <div class="footer-container">
+          <!-- BRAND COLUMN -->
+          <div class="footer-box footer-brand">
+            <a href="index.html" class="footer-logo">
+              <div class="logo-icon-wrap">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div class="logo-text">
+                <span class="brand-name">YOLY</span>
+                <span class="brand-sub">SALON</span>
+              </div>
+            </a>
+            <p class="brand-desc">
+              Orange Farm’s premier destination for luxury hair styling,
+              precision braiding, custom coloring, and restorative hair care.
             </p>
+            <div class="footer-socials">
+              <a
+                href="https://wa.me/27796336537"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS COLUMN -->
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-angle-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-angle-right"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html"
+                  ><i class="fa-solid fa-angle-right"></i> Gallery</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html"
+                  ><i class="fa-solid fa-angle-right"></i> Pricing</a
+                >
+              </li>
+              <li>
+                <a href="booking.html"
+                  ><i class="fa-solid fa-angle-right"></i> Booking</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-angle-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- SERVICES COLUMN -->
+          <div class="footer-box">
+            <h3>Our Services</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Knotless Braids</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Hair Coloring</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Deep Treatments</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Wig Installation</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Bridal Styling</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT COLUMN -->
+          <div class="footer-box footer-contact">
+            <h3>Get In Touch</h3>
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Johannesburg</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+27796336537">+27 79 633 6537</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/27796336537" target="_blank"
+                  >Chat on WhatsApp</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- QUICK LINKS -->
-        <div class="footer-box">
-            <h2>Quick Links</h2>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="booking.html">Booking</a>
-            <a href="contact.html">Contact</a>
-            
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>© 2026 Yoly Hair Salon. All Rights Reserved.</p>
+          <p class="developer-credit">
+            Designed & Developed with <i class="fa-solid fa-heart"></i> by
+            <span>Sam Web Studios</span>
+          </p>
         </div>
-
-        <!-- SERVICES -->
-        <div class="footer-box">
-            <h2>Our Services</h2>
-            <a href="services.html">Braiding</a>
-            <a href="services.html">Hair Treatment</a>
-            <a href="services.html">Hair Coloring</a>
-            <a href="services.html">Wig Installation</a>
-            <a href="services.html">Bridal Styling</a>
-            
-            
-        </div>
-
-        <!-- CONTACT -->
-        <div class="footer-box">
-            <h2>Contact Us</h2>
-            <p>📍 Orange Farm, Johannesburg</p>
-            <p>📞 +27 796336537</p>
-            
-        </div>
-
-    </div>
-
-    <!-- BOTTOM BAR -->
-    <div class="footer-bottom">
-        <p>
-            © 2026 Yoly Hair Salon. All Rights Reserved.
-        </p>
-    </div>
-
-</footer>
+      </div>
+    </footer>
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/27796336537" class="whatsapp-float" target="_blank">
 

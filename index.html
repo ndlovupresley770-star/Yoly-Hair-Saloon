@@ -9,53 +9,104 @@
     <!--Preconnect Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="91N119y5-lMr7KUy_tLqdhi_ELUoHZd_MROihfatFgQ" />
     
     <link rel="shortcut icon" href="images/yolyhairsalon.logo.png" type="image/x-icon">
 
-    <link rel="preload"
-      as="image"
-      href="images/yoly.jpg"
-      fetchpriority="high">
+    <link rel="preload" as="image" href="images/yoly.jpg" fetchpriority="high">
 
+    
 </head>
 <body>
-    <header>
-    <nav class="navbar">
+<!-- LUXURY TOP UTILITY BAR -->
+<div class="top-bar">
+    <div class="container top-bar-container">
 
-        <a href="index.html" class="logo">
-            Yoly Hair Salon
-        </a>
+        <!-- Left: Location & Working Hours -->
+        <div class="top-bar-left">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Gauteng</span>
+            </div>
+            <div class="top-bar-divider"></div>
+            <div class="top-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html" >About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           
-        </ul>
-         
+        <!-- Right: Direct Phone, WhatsApp & Social Links -->
+        <div class="top-bar-right">
+            <a href="tel:+27796336537" class="top-bar-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>+27 79 633 6537</span>
+            </a>
+            <a href="https://wa.me/27796336537" target="_blank" class="top-bar-link whatsapp-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            
+            <div class="top-bar-divider"></div>
 
+            <div class="top-bar-socials">
+                <a href="https://wa.me/27796336537" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <header id="header">
+       <nav class="navbar">
+
+    <!-- Compact Luxury Logo Mark -->
+    <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="logo-text">
+            <span class="brand-name">YOLY</span>
+            <span class="brand-sub">SALON</span>
+        </div>
+    </a>
+
+    <!-- Navigation Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Right Side Actions -->
+    <div class="nav-actions">
         <a href="booking.html" class="nav-btn">
             Book Now
         </a>
 
-    </nav>
-</header>
-<!-- HERO SECTION -->
-<main>
-    
-<section class="hero">
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</nav>
+    </header>
+
+    <main>
+        <section class="hero">
 
     <div class="hero-content">
 
         <span class="hero-tag">
-            Welcome To Yoly Hair Salon
+            <i class="fa-solid fa-crown"></i> Welcome To Yoly Hair Salon
         </span>
 
         <h1>
@@ -70,276 +121,482 @@
 
         <div class="hero-buttons">
             <a href="booking.html" class="btn-primary">
-                Book Appointment
+                <i class="fa-regular fa-calendar-check"></i> Book Appointment
             </a>
 
-        <!-- Call Button -->
-    <a href="tel:+27796336537" class="btn-call">
-         Call Us
-    </a>
+            <!-- Call Button -->
+            <a href="tel:+27796336537" class="btn-call">
+                <i class="fa-solid fa-phone"></i> Call Us
+            </a>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/27796336537" target="_blank" class="btn-whatsapp">
-         WhatsApp
-    </a>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/27796336537" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+
+        <!-- CONTACT BANNER INTEGRATED INTO HERO -->
+        <div class="hero-contact-banner">
+            <div class="hero-banner-item">
+                <div class="hero-banner-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="hero-banner-info">
+                    <h4>Location</h4>
+                    <p>Orange Farm, Johannesburg</p>
+                </div>
+            </div>
+
+            <div class="hero-banner-item">
+                <div class="hero-banner-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="hero-banner-info">
+                    <h4>Direct Line</h4>
+                    <a href="tel:+27796336537">+27 79 633 6537</a>
+                </div>
+            </div>
+
+            <div class="hero-banner-item">
+                <div class="hero-banner-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="hero-banner-info">
+                    <h4>Working Hours</h4>
+                    <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                </div>
+            </div>
         </div>
 
     </div>
 
 </section>
-
-
-<!-- ABOUT PREVIEW -->
-
 <section class="home-about">
+    <div class="container">
+        <div class="about-grid">
 
-    <div class="about-image">
-        <img src="images/home-about.webp"  loading="lazy" alt="Salon">
-    </div>
+            <!-- LEFT CONTENT COLUMN -->
+            <div class="about-content">
+                <span class="about-tag">
+                    <i class="fa-solid fa-sparkles"></i> Premium Salon Experience
+                </span>
+                <h2>Why Choose Our Orange Farm Hair Salon?</h2>
+                <p class="about-intro">
+                    At our salon, we believe every client deserves to leave feeling confident and looking their best. Whether you're visiting for a fresh hairstyle, protective braids, a weave installation, or a hair treatment, we're committed to delivering quality results in a welcoming and professional environment.
+                </p>
 
-    <div class="about-content">
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-scissors"></i></div>
+                        <div class="feature-text">
+                            <h3>Expert Stylists</h3>
+                            <p>Skilled professionals mastering the latest trends and braiding techniques.</p>
+                        </div>
+                    </div>
 
-        <h2>Why Choose Our Orange Farm Hair Salon?</h2>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <div class="feature-text">
+                            <h3>Quality Care</h3>
+                            <p>Trusted products to keep your natural hair strong and healthy.</p>
+                        </div>
+                    </div>
 
-        At our salon, we believe every client deserves to leave feeling confident and looking their best. Whether you're visiting for a fresh hairstyle, protective braids, a weave installation, or a hair treatment, we're committed to delivering quality results in a welcoming and professional environment. <br><br>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <div class="feature-text">
+                            <h3>Affordable</h3>
+                            <p>Luxury styling and treatments tailored to fit your budget.</p>
+                        </div>
+                    </div>
 
-<h3>Experienced Hair Stylist</h3>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="feature-text">
+                            <h3>Cozy Vibe</h3>
+                            <p>A warm, clean, and relaxing environment for your total comfort.</p>
+                        </div>
+                    </div>
 
-Our skilled stylists stay up to date with the latest trends and techniques to create hairstyles that suit your personality, lifestyle, and preferences. <br><br>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="feature-text">
+                            <h3>Every Occasion</h3>
+                            <p>Custom styling for weddings, graduations, and daily glam.</p>
+                        </div>
+                    </div>
 
-<h3>Quality Hair Care</h3>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="feature-text">
+                            <h3>Orange Farm</h3>
+                            <p>Conveniently located right in your neighborhood.</p>
+                        </div>
+                    </div>
+                </div>
 
-We use trusted hair products and professional techniques to help keep your hair healthy, strong, and beautiful while achieving the look you. <br><br>
+                <a href="about.html" class="about-btn">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
 
- <h3>Affordable Prices</h3>
+            <!-- RIGHT IMAGE COLUMN WITH EMBEDDED BADGE -->
+            <div class="about-image-wrapper">
+                <div class="about-image">
+                    <img src="images/home-about.webp" loading="lazy" alt="Salon" onerror="this.src='https://placehold.co/600x700/18151D/C58572?text=Yoly+Hair+Salon';">
+                    
+                    <!-- Floating Overlay Card on Image -->
+                    <div class="image-overlay-card">
+                        <div class="overlay-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div class="overlay-text">
+                            <span class="overlay-title">Yoly Hair Salon</span>
+                            <span class="overlay-subtitle">Orange Farm, Gauteng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-We offer high-quality hair services at competitive prices, making it easier for you to enjoy professional styling without overspending. <br><br>
-
- <h3>Friendly & Comfortable Atmosphere</h3>
-
-From the moment you walk in, you'll be welcomed by a friendly team that is dedicated to making your salon experience relaxing and enjoyable. <br><br>
-
- <h3>Hairstyles for Every Occasion</h3>
-
-Whether it's a new everyday look, a wedding, graduation, birthday, or another special event, we'll help you achieve a style that makes you feel confident. <br><br>
-
- <h3>Conveniently Located in Orange Farm</h3>
-
-Our salon proudly serves clients throughout Orange Farm and the surrounding areas, making it easy to access professional hair care close to home. <br><br>
-
-        <a href="about.html" class="about-btn">
-            Learn More
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- SERVICES -->
-<div class="home-service-section">
-<div class="home-service-card">
-    <img src="images/braiding.webp" loading="lazy" alt="Braiding" class="home-service-img">
-    <h2>Braiding</h2>
-    <p>Beautiful protective hairstyles and braids.</p>
-</div>
-
-<div class="service-card">
-    <img src="images/hair-coloring.webp" loading="lazy" alt="Hair Coloring" class="service-img">
-    <h2>Hair Coloring</h2>
-    <p>Modern coloring and highlighting techniques.</p>
-</div>
-
-<div class="service-card">
-    <img src="images/hair-treatment.webp" loading="lazy" alt="Hair Treatment" class="service-img">
-    <h2>Hair Treatment</h2>
-    <p>Restore shine, strength and healthy hair.</p>
-</div>
-
-<div class="service-card">
-    <img src="images/wig-installation.webp" loading="lazy" alt="Wig Installation" class="service-img">
-    <h2>Wig Installation</h2>
-    <p>Professional wig fitting and styling.</p>
-</div>
-
-</div>
-<section class="home-team">
-    <div class="section-title">
-        <h2>Meet Your Stylist in Orange Farm</h2>
-        <p>Experienced professionals dedicated to your beauty.</p>
-    </div>
-    <div class="team-container">
-        <div class="team-card">
-            <img src="images/yolandahairstylist.webp" loading="lazy" alt="Hair Styling Specialist">
-            <h3>Yolanda</h3>
-            <p>Braiding Specialist</p>
-        </div>
-        <div class="team-card">
-            <img src="images/Haircoloringspecialist.webp" loading="lazy" alt="Hiar Co;oring Specialist">
-            <h3>Yolanda</h3>
-            <p>Coloring Expert</p>
-        </div>
-        <div class="team-card">
-            <img src="images/wiginstaller.webp" loading="lazy" alt="Wig Installer Specialist">
-            <h3>Yolanda</h3>
-            <p>Wig & Styling</p>
         </div>
     </div>
 </section>
+<!--Home Services -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Our Expertise</span>
+                    <h2>Featured Salon Services</h2>
+                    <p>Tailored hair care treatments designed to nourish, style, and transform your look.</p>
+                </div>
 
-<!--Testimonals-->
-<section class="home-testimonials">
-    <div class="section-title">
-        <h2>What Clients Say</h2>
-    </div>
-    <div class="testimonial-box">
-        <p>"Yoly Salon transformed my look — I felt like a queen!"</p>
-        <span>- Thandi, Johannesburg</span>
-    </div>
-    <div class="testimonial-box">
-        <p>"Professional, friendly and affordable. Highly recommend!"</p>
-        <span>- Lerato, Orange Farm</span>
-    </div>
-</section>
-<!-- WHY US -->
+                <div class="home-service-section">
+                    <div class="home-service-card service-card">
+                        <div class="service-img-wrap">
+                            <img src="images/braiding.webp" loading="lazy" alt="Braiding" class="home-service-img" onerror="this.src='https://placehold.co/400x300/18151D/C58572?text=Braiding';">
+                        </div>
+                        <div class="service-card-body">
+                            <h2>Braiding</h2>
+                            <p>Beautiful protective hairstyles and braids.</p>
+                        </div>
+                    </div>
 
-<section class="why-us">
+                    <div class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="images/hair-coloring.webp" loading="lazy" alt="Hair Coloring" class="service-img" onerror="this.src='https://placehold.co/400x300/18151D/C58572?text=Hair+Coloring';">
+                        </div>
+                        <div class="service-card-body">
+                            <h2>Hair Coloring</h2>
+                            <p>Modern coloring and highlighting techniques.</p>
+                        </div>
+                    </div>
 
-    <div class="section-title">
-        <h2>Why Choose Yoly Hair Salon?</h2>
-    </div>
+                    <div class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="images/hair-treatment.webp" loading="lazy" alt="Hair Treatment" class="service-img" onerror="this.src='https://placehold.co/400x300/18151D/C58572?text=Hair+Treatment';">
+                        </div>
+                        <div class="service-card-body">
+                            <h2>Hair Treatment</h2>
+                            <p>Restore shine, strength and healthy hair.</p>
+                        </div>
+                    </div>
 
-    <div class="why-grid">
+                    <div class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="images/wig-installation.webp" loading="lazy" alt="Wig Installation" class="service-img" onerror="this.src='https://placehold.co/400x300/18151D/C58572?text=Wig+Installation';">
+                        </div>
+                        <div class="service-card-body">
+                            <h2>Wig Installation</h2>
+                            <p>Professional wig fitting and styling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="why-card">
-            <h3>Experienced Stylists</h3>
-            <p>Professional beauty experts with years of experience.</p>
+      <!--Home Testimonials-->
+
+        <section class="home-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Client Love</span>
+                    <h2>What Clients Say</h2>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Yoly Salon transformed my look — I felt like a queen!"</p>
+                        <span>- Thandi, Johannesburg</span>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Professional, friendly and affordable. Highly recommend!"</p>
+                        <span>- Lerato, Orange Farm</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Why Choose Us -->
+        <section class="why-us">
+    <div class="container">
+        <!-- SECTION HEADER -->
+        <div class="section-header">
+            <span class="sub-title">
+                <i class="fa-solid fa-shield-halved"></i> The Yoly Difference
+            </span>
+            <h2>Why Choose Yoly Hair Salon in Orange Farm?</h2>
+            <p>We combine master craftsmanship, premium hair care products, and exceptional customer service to deliver a luxury salon experience right in your neighborhood.</p>
         </div>
 
-        <div class="why-card">
-            <h3>Premium Products</h3>
-            <p>Quality products that protect and nourish your hair.</p>
+        <!-- WHY CHOOSE US GRID -->
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="why-icon-wrap">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="why-card-content">
+                    <h3>Experienced Stylists</h3>
+                    <p>Our certified hair stylists specialize in precision braiding, wig installations, and custom color techniques tailored to complement your unique features and style.</p>
+                </div>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon-wrap">
+                    <i class="fa-solid fa-bottle-droplet"></i>
+                </div>
+                <div class="why-card-content">
+                    <h3>Premium Hair Products</h3>
+                    <p>We exclusively use salon-grade, nourishing shampoos, deep conditioners, and protective oils that restore moisture balance and keep your natural hair thriving.</p>
+                </div>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon-wrap">
+                    <i class="fa-solid fa-gem"></i>
+                </div>
+                <div class="why-card-content">
+                    <h3>Affordable Luxury</h3>
+                    <p>Experience high-end salon treatments and flawless finish styling at fair, transparent, and competitive prices designed for our Orange Farm community.</p>
+                </div>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon-wrap">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <div class="why-card-content">
+                    <h3>Relaxing Environment</h3>
+                    <p>Step into a comfortable, hygienic, and welcoming salon space where you can unwind, enjoy personalized attention, and leave feeling confident and beautiful.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
+</section>
+<!--Stats-->
+        <section class="stats">
+    <div class="container">
+        <div class="stats-grid">
 
-        <div class="why-card">
-            <h3>Affordable Pricing</h3>
-            <p>Luxury beauty services at competitive prices.</p>
+            <div class="stat-box">
+                <div class="stat-icon-wrap">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h2 class="stat-number" data-target="500">0</h2>
+                <span class="stat-plus">+</span>
+                <p>Happy Clients Served</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-icon-wrap">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h2 class="stat-number" data-target="5">0</h2>
+                <span class="stat-plus">+</span>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-icon-wrap">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h2 class="stat-number" data-target="20">0</h2>
+                <span class="stat-plus">+</span>
+                <p>Signature Hair Styles</p>
+            </div>
+
+            <div class="stat-box">
+                <div class="stat-icon-wrap">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2 class="stat-number" data-target="100">0</h2>
+                <span class="stat-plus">%</span>
+                <p>Client Satisfaction</p>
+            </div>
+
         </div>
-
-        <div class="why-card">
-            <h3>Relaxing Environment</h3>
-            <p>Comfortable and welcoming salon atmosphere.</p>
-        </div>
-
     </div>
-
 </section>
+<!--Final Cta-->
+      <section class="cta">
+    <!-- Glowing background accent radial blur -->
+    <div class="cta-glow-bg"></div>
 
-<!-- STATS -->
+    <div class="container">
+        <div class="cta-card">
 
-<section class="stats">
+            <span class="cta-tag">
+                <i class="fa-solid fa-sparkles"></i> Transform Your Look Today
+            </span>
 
-    <div class="stat-box">
-        <h2>500+</h2>
-        <p>Happy Clients</p>
-    </div>
+            <h2>Ready For A Gorgeous New Hairstyle?</h2>
 
-    <div class="stat-box">
-        <h2>5+</h2>
-        <p>Years Experience</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>20+</h2>
-        <p>Hair Styles</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>100%</h2>
-        <p>Satisfaction</p>
-    </div>
-
-</section>
-
-
-<!-- CALL TO ACTION -->
-
-<section class="cta">
-
-    <h2>Ready For A New Look?</h2>
-
-    <p>
-        Book your appointment today and let our
-        experts transform your style.
-    </p>
-
-    <a href="booking.html">
-        Book Now
-    </a>
-
-</section>
-
-</main>
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- BRAND -->
-        <div class="footer-box">
-            <h2>Yoly Hair Salon</h2>
             <p>
-                Luxury hair styling, braiding, coloring and beauty treatments.
-                We bring out your beauty and confidence.
+                Step into confidence with Orange Farm's top-rated hair stylists. 
+                Whether it's flawless knotless braids, custom wig installation, or vibrant coloring, 
+                your dream style is just a click away.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="booking.html" class="btn-cta-primary">
+                    <i class="fa-regular fa-calendar-check"></i> Book Appointment Now
+                </a>
+                
+                <a href="https://wa.me/27796336537" target="_blank" class="btn-cta-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Chat On WhatsApp
+                </a>
+            </div>
+
+            <!-- Trust Badges Below CTA -->
+            <div class="cta-trust-features">
+                <div class="trust-item">
+                    <i class="fa-solid fa-check-double"></i>
+                    <span>Instant Confirmation</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Friendly & Clean Salon</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Convenient Orange Farm Location</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            
+            <!-- BRAND COLUMN -->
+            <div class="footer-box footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <div class="logo-icon-wrap">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="brand-name">YOLY</span>
+                        <span class="brand-sub">SALON</span>
+                    </div>
+                </a>
+                <p class="brand-desc">
+                    Orange Farm’s premier destination for luxury hair styling, precision braiding, custom coloring, and restorative hair care.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/27796336537" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- QUICK LINKS COLUMN -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Gallery</a></li>
+                    <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i> Pricing</a></li>
+                    <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Booking</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- SERVICES COLUMN -->
+            <div class="footer-box">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Knotless Braids</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Hair Coloring</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Deep Treatments</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Wig Installation</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Bridal Styling</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT COLUMN -->
+            <div class="footer-box footer-contact">
+                <h3>Get In Touch</h3>
+                <div class="contact-info-list">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Orange Farm, Johannesburg</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+27796336537">+27 79 633 6537</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/27796336537" target="_blank">Chat on WhatsApp</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+            <p>© 2026 Yoly Hair Salon. All Rights Reserved.</p>
+            <p class="developer-credit">
+                Designed & Developed with <i class="fa-solid fa-heart"></i> by <span>Sam Web Studios</span>
             </p>
         </div>
-
-        <!-- QUICK LINKS -->
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="booking.html">Booking</a>
-            <a href="contact.html">Contact</a>
-            
-        </div>
-
-        <!-- SERVICES -->
-        <div class="footer-box">
-            <h3>Our Services</h3>
-            <a href="services.html">Braiding</a>
-            <a href="services.html">Hair Coloring</a>
-            <a href="services.html">Hair Treatment</a>
-            <a href="services.html">Wig Installation</a>
-            <a href="services.html">Bridal Styling</a>
-
-        <!-- CONTACT -->
-        <div class="footer-box">
-            <h2>Contact Us</h2>
-            <p>📍 Orange Farm, Johannesburg</p>
-            <p>📞 +27 79 633 6537</p>
-            
-        </div>
-
     </div>
-
-  <!-- BOTTOM BAR -->
-    <div class="footer-bottom">
-        <p>
-            © 2026 Yoly Hair Salon. All Rights Reserved.
-        </p>
-    </div>
-
 </footer>
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/27796336537" class="whatsapp-float" target="_blank">
+   
 
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
-         alt="WhatsApp">
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/27796336537" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
 
-</a>
-  
+    <script src="script.js"></script>
 </body>
 </html>

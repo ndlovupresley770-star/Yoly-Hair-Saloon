@@ -6,123 +6,276 @@
 <title>Contact Our Hair Salon in Orange Farm | Book or Enquire Today</title>
 <meta name="description" content="Get in touch with our Orange Farm hair salon to book an appointment, ask a question, or visit our salon. Call or message us today on 079 633 6537.
 ">
-<link rel="shortcut icon" href="" type="">
+ <!--Preconnect Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body>
-       <header>
-    <nav class="navbar">
+<!-- LUXURY TOP UTILITY BAR -->
+<div class="top-bar">
+    <div class="container top-bar-container">
 
-        <a href="index.html" class="logo">
-            Yoly Hair Salon
-        </a>
+        <!-- Left: Location & Working Hours -->
+        <div class="top-bar-left">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Gauteng</span>
+            </div>
+            <div class="top-bar-divider"></div>
+            <div class="top-bar-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-    
-        </ul>
-         
+        <!-- Right: Direct Phone, WhatsApp & Social Links -->
+        <div class="top-bar-right">
+            <a href="tel:+27796336537" class="top-bar-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>+27 79 633 6537</span>
+            </a>
+            <a href="https://wa.me/27796336537" target="_blank" class="top-bar-link whatsapp-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Us</span>
+            </a>
+            
+            <div class="top-bar-divider"></div>
 
+            <div class="top-bar-socials">
+                <a href="https://wa.me/27796336537" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <header id="header">
+       <nav class="navbar">
+
+    <!-- Compact Luxury Logo Mark -->
+    <a href="index.html" class="logo">
+        <div class="logo-icon-wrap">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="logo-text">
+            <span class="brand-name">YOLY</span>
+            <span class="brand-sub">SALON</span>
+        </div>
+    </a>
+
+    <!-- Navigation Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="services.html" >Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Right Side Actions -->
+    <div class="nav-actions">
         <a href="booking.html" class="nav-btn">
             Book Now
         </a>
 
-    </nav>
-</header>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 
-<!-- HERO -->
+</nav>
+    </header>
 
+<!-- CONTACT HERO -->
 <section class="contact-hero">
+    <!-- Dark Background Overlay Container -->
+    <div class="contact-hero-overlay"></div>
 
-    <div class="contact-hero-content">
+    <div class="container contact-hero-container">
+        <div class="contact-hero-content">
+            
+            <span class="hero-badge">
+                <i class="fa-solid fa-headset"></i> We're Here For You
+            </span>
 
-        <h1>Contact Yoly Hair Salon</h1>
+            <h1>Contact Yoly Hair Salon</h1>
 
-        <p>
-            We are here to help you with bookings, inquiries and special requests.
-            Get in touch with us today.
-        </p>
+            <p>
+                We are here to assist you with bookings, service inquiries, and custom styling requests. Get in touch with our team today for a seamless salon experience.
+            </p>
 
+            <div class="contact-hero-actions">
+                <a href="https://wa.me/27796336537" class="btn-hero-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="tel:+27796336537" class="btn-hero-call">
+                    <i class="fa-solid fa-phone"></i> Call +27 79 633 6537
+                </a>
+            </div>
+
+            <!-- Quick Information Chips -->
+            <div class="contact-hero-chips">
+                <span class="chip-item">
+                    <i class="fa-solid fa-location-dot"></i> Orange Farm, Johannesburg
+                </span>
+                <span class="chip-divider"></span>
+                <span class="chip-item">
+                    <i class="fa-regular fa-clock"></i> Mon - Sat: 08:00 - 18:00
+                </span>
+            </div>
+
+        </div>
     </div>
-
 </section>
 
-<!-- CONTACT INFO -->
+<!-- CONTACT INFO CARDS -->
+<section class="contact-info-section">
+    <div class="container">
 
-<section class="contact-info">
+        <div class="contact-info-grid">
 
-    <div class="info-card">
-        <h3>📍 Location</h3>
-        <p>Orange Farm, Johannesburg, South Africa</p>
-    </div>
-
-    <div class="info-card">
-        <h3>📞 Phone</h3>
-        <p>+27 79 633 6537</p>
-        
-    </div>
-
-    <div class="info-card">
-        <h3>📧 Email</h3>
-        <p><p>yolandachazinga285@gmail.com</p></p>
-    </div>
-
-    <div class="info-card">
-        <h3>⏰ Working Hours</h3>
-        <p>Mon - Sat: 08:00 - 18:00</p>
-    </div>
-
-</section>
-
-<!-- CONTACT FORM -->
-
-<section class="contact-form-section">
-
-    <h2>Send Us a Message</h2>
-
-    <form action="https://formspree.io/f/xkoaakko"
-    method="post"
-    >
-
-        <div class="form-grid">
-
-            <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" name="yourname" placeholder="Your name">
+            <!-- Card 1: Location -->
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Location</h3>
+                </div>
+                <p>Orange Farm, Johannesburg, South Africa</p>
+                <a href="https://maps.google.com/?q=Orange+Farm+Johannesburg" class="info-card-link" target="_blank" rel="noopener noreferrer">
+                    Get Directions <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
             </div>
 
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" name="emailaddress" placeholder="Your email">
+            <!-- Card 2: Phone -->
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Phone & WhatsApp</h3>
+                </div>
+                <p>+27 79 633 6537</p>
+                <div class="info-card-actions">
+                    <a href="tel:+27796336537" class="info-card-link">Call Now</a>
+                    <a href="https://wa.me/27796336537" class="info-card-link highlight" target="_blank" rel="noopener noreferrer">
+                        WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" name="phonenumber" placeholder="+27 00 000 0000">
+            <!-- Card 3: Email -->
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                </div>
+                <p>yolandachazinga285@gmail.com</p>
+                <a href="mailto:yolandachazinga285@gmail.com" class="info-card-link">
+                    Send Email <i class="fa-solid fa-paper-plane"></i>
+                </a>
             </div>
 
-            <div class="form-group">
-                <label>Subject</label>
-                <input type="text" name="subject" placeholder="Subject">
-            </div>
-
-            <div class="form-group full">
-                <label>Message</label>
-                <textarea name="message" placeholder="Write your message here..."></textarea>
+            <!-- Card 4: Working Hours -->
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                </div>
+                <p>Monday – Saturday: 08:00 – 18:00</p>
+                <span class="info-card-subtext">Sunday: By Appointment Only</span>
             </div>
 
         </div>
 
-        <button type="submit">Send Message</button>
+    </div>
+</section>
 
-    </form>
+<!-- CONTACT FORM -->
+<section class="contact-form-section">
+    <div class="container">
+        
+        <div class="contact-form-card">
+            
+            <div class="form-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2>Send Us a Message</h2>
+                <p>Have a question or custom styling inquiry? Leave us a message and we'll get back to you promptly.</p>
+            </div>
 
+            <form action="https://formspree.io/f/xkoaakko" method="POST" class="luxury-contact-form">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="yourname">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user input-icon"></i>
+                            <input type="text" id="yourname" name="yourname" required placeholder="Enter your full name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailaddress">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope input-icon"></i>
+                            <input type="email" id="emailaddress" name="emailaddress" required placeholder="example@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone input-icon"></i>
+                            <input type="tel" id="phonenumber" name="phonenumber" required placeholder="+27 79 633 6537">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-tag input-icon"></i>
+                            <input type="text" id="subject" name="subject" required placeholder="e.g. Price Inquiry, Custom Braids">
+                        </div>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="message">Message</label>
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" rows="5" required placeholder="Write your message or inquiry here..."></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-submit-message">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-response-note">
+                        <i class="fa-solid fa-clock"></i> We typically respond within <strong>1–2 hours</strong> during operating hours.
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
 </section>
 
 <!-- MAP SECTION -->
@@ -137,94 +290,201 @@
 
 </section>
 
-<!-- FAQ -->
 
-<section class="contact-faq">
 
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="faq-item">
-        <h3>Do I need an appointment?</h3>
-        <p>Yes, we recommend booking in advance to avoid waiting times.</p>
-    </div>
-
-    <div class="faq-item">
-        <h3>Do you accept walk-ins?</h3>
-        <p>Yes, but availability is not guaranteed.</p>
-    </div>
-
-    <div class="faq-item">
-        <h3>How do I cancel a booking?</h3>
-        <p>You can contact us via phone or email at least 24 hours before your appointment.</p>
-    </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="contact-cta">
-
-    <h2>Ready To Look Beautiful?</h2>
-
-    <p>Book your appointment today and let our experts take care of you.</p>
-
-    <a href="booking.html">Book Now</a>
-
-</section>
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- BRAND -->
-        <div class="footer-box">
-            <h2>Yoly Hair Salon</h2>
-            <p>
-                Luxury hair styling, braiding, coloring and beauty treatments.
-                We bring out your beauty and confidence.
-            </p>
-        </div>
-
-        <!-- QUICK LINKS -->
-        <div class="footer-box">
-            <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="booking.html">Booking</a>
-            <a href="contact.html">Contact</a>
+<!-- CONTACT CTA -->
+<section class="contact-cta-section">
+    <div class="container">
+        
+        <div class="contact-cta-card">
             
+            <!-- Ambient Glow Accents -->
+            <div class="cta-ambient-glow glow-top-left"></div>
+            <div class="cta-ambient-glow glow-bottom-right"></div>
+
+            <div class="contact-cta-content">
+                
+                <span class="cta-badge">
+                    <i class="fa-solid fa-sparkles"></i> Your Beauty Transformation Awaits
+                </span>
+
+                <h2>Ready To Look Beautiful?</h2>
+
+                <p>
+                    Book your appointment today and let our master stylists treat you to an unforgettable luxury salon experience.
+                </p>
+
+                <div class="cta-buttons-group">
+                    <a href="booking.html" class="btn-cta-primary">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                    </a>
+                    <a href="https://wa.me/27796336537" class="btn-cta-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="cta-trust-highlights">
+                    <span><i class="fa-solid fa-check"></i> Instant Booking Confirmation</span>
+                    <span class="dot-separator">•</span>
+                    <span><i class="fa-solid fa-crown"></i> Premium Hair Care Guarantee</span>
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- SERVICES -->
-        <div class="footer-box">
+    </div>
+</section>
+
+<footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <!-- BRAND COLUMN -->
+          <div class="footer-box footer-brand">
+            <a href="index.html" class="footer-logo">
+              <div class="logo-icon-wrap">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div class="logo-text">
+                <span class="brand-name">YOLY</span>
+                <span class="brand-sub">SALON</span>
+              </div>
+            </a>
+            <p class="brand-desc">
+              Orange Farm’s premier destination for luxury hair styling,
+              precision braiding, custom coloring, and restorative hair care.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://wa.me/27796336537"
+                target="_blank"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="TikTok"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS COLUMN -->
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-angle-right"></i> Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fa-solid fa-angle-right"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html"
+                  ><i class="fa-solid fa-angle-right"></i> Gallery</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html"
+                  ><i class="fa-solid fa-angle-right"></i> Pricing</a
+                >
+              </li>
+              <li>
+                <a href="booking.html"
+                  ><i class="fa-solid fa-angle-right"></i> Booking</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-angle-right"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- SERVICES COLUMN -->
+          <div class="footer-box">
             <h3>Our Services</h3>
-            <a href="services.html">Braiding</a>
-            <a href="services.html">Hair Coloring</a>
-            <a href="services.html">Hair Treatment</a>
-            <a href="services.html">Wig Installation</a>
-            <a href="services.html">Bridal Styling</a>
+            <ul class="footer-links">
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Knotless Braids</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Hair Coloring</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Deep Treatments</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Wig Installation</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fa-solid fa-angle-right"></i> Bridal Styling</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT COLUMN -->
+          <div class="footer-box footer-contact">
+            <h3>Get In Touch</h3>
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Orange Farm, Johannesburg</span>
+              </div>
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+27796336537">+27 79 633 6537</a>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/27796336537" target="_blank"
+                  >Chat on WhatsApp</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- CONTACT -->
-        <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p>📍 Orange Farm, Johannesburg</p>
-            <p>📞 +27 79 633 6537</p>
-           
+      <!-- BOTTOM BAR -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p>© 2026 Yoly Hair Salon. All Rights Reserved.</p>
+          <p class="developer-credit">
+            Designed & Developed with <i class="fa-solid fa-heart"></i> by
+            <span>Sam Web Studios</span>
+          </p>
         </div>
-
-    </div>
-
-    <!-- BOTTOM BAR -->
-    <div class="footer-bottom">
-        <p>
-            © 2026 Yoly Hair Salon. All Rights Reserved.
-        </p>
-    </div>
-
-</footer>
+      </div>
+    </footer>
 <!-- WHATSAPP FLOATING BUTTON -->
 <a href="https://wa.me/27796336537" class="whatsapp-float" target="_blank">
 
