@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- About Page -->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/about</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Services Page -->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/services</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Contact Page -->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/contact</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -36,7 +36,7 @@
   <!--Booking Page-->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/booking</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +44,7 @@
   <!--Pricing Page-->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/pricing</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -52,7 +52,7 @@
   <!--Gallery Page-->
   <url>
     <loc>https://yolyhairsaloonn.netlify.app/gallery</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
