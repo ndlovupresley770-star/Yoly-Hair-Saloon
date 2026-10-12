@@ -45,7 +45,7 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-cream);
+  background-color: #0f0f0f !important;
   color: var(--text-dark-espresso);
   line-height: 1.7;
   overflow-x: hidden;
@@ -449,7 +449,7 @@ display: none;
   transform: translateY(-2px);
 }
 
-
+/* Mobile & Tablet Responsiveness */
 /* ==========================================
    MOBILE TOP BAR RESPONSIVENESS
    ========================================== */
@@ -7838,750 +7838,399 @@ display: none;
         height: 1px;
     }
 }
-/* ==========================================
-   MAIN PRICING MENU - LUXURY STYLING
-   ========================================== */
-
+/* ==========================================================================
+   GLOBAL & SECTION CONTAINER STYLES
+   ========================================================================== */
 .price-section {
-    padding: 5.5rem 2rem 6rem;
-    background: linear-gradient(180deg, #121016 0%, var(--dark-plum, #18151D) 100%);
-    color: var(--ivory, #FAF7F2);
-    position: relative;
+  padding: 60px 15px;
+  background-color: #0f0f0f; /* Dark theme background */
+  color: #ffffff;
 }
 
 .price-section .container {
-    max-width: 1250px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* Header Styling */
-.price-section .section-heading {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 2.5rem;
+/* SECTION HEADER */
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.price-section .sub-title {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--champagne, #D4AF37);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+.section-heading .sub-title {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c88a75; /* Warm Rose Gold / Copper Accent */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.price-section .section-heading h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 3.5vw, 2.7rem);
-    color: #FFFFFF;
-    margin-bottom: 0.75rem;
+.section-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
 }
 
-.price-section .section-heading p {
-    font-size: 0.95rem;
-    color: rgba(250, 247, 242, 0.8) !important;
-    line-height: 1.6;
+.section-heading p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-/* Category Navigation Tab Buttons */
+
+/* ==========================================================================
+   PRICING TAB NAVIGATION (TOP MENU)
+   ========================================================================== */
 .pricing-tabs-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.85rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
 }
 
 .pricing-tab-btn {
-    background: rgba(31, 27, 36, 0.75);
-    border: 1px solid rgba(197, 133, 114, 0.25);
-    color: rgba(250, 247, 242, 0.85);
-    padding: 0.65rem 1.4rem;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.88rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: #1a1a1a;
+  color: #cccccc;
+  border: 1px solid #333333;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing-tab-btn i {
+  color: #c88a75; /* Rose Gold Icon */
 }
 
 .pricing-tab-btn:hover,
 .pricing-tab-btn.active {
-    background: linear-gradient(135deg, var(--rose-gold, #C58572), var(--rose-gold-dark, #A46553));
-    color: #FFFFFF;
-    border-color: var(--rose-gold, #C58572);
-    box-shadow: 0 6px 20px rgba(197, 133, 114, 0.35);
-}
-
-.pricing-tab-btn i {
-    color: var(--champagne, #D4AF37);
+  background: #c88a75;
+  color: #ffffff;
+  border-color: #c88a75;
+  font-weight: 700;
 }
 
 .pricing-tab-btn.active i {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-/* Category Block Visibility Toggle */
+
+/* TAB SWITCHING VISIBILITY */
 .pricing-category-block {
-    display: none;
-    animation: fadeIn 0.4s ease forwards;
+  display: none;
 }
 
 .pricing-category-block.active {
-    display: block;
+  display: block;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
 
-/* Category Header Banner */
+/* ==========================================================================
+   CATEGORY HEADER BANNER
+   ========================================================================== */
 .category-header-banner {
-    background: rgba(38, 32, 45, 0.85);
-    border: 1px solid rgba(197, 133, 114, 0.3);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 1.25rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #181818;
+  border: 1px solid #2d2d2d;
+  padding: 16px 24px;
+  border-radius: 12px 12px 0 0;
 }
 
-.banner-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.category-header-banner .banner-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.banner-title i {
-    color: var(--rose-gold-light, #E2A898);
-    font-size: 1.25rem;
+.category-header-banner .banner-title i {
+  font-size: 1.2rem;
+  color: #c88a75; /* Rose Gold Icon */
 }
 
-.banner-title h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
-    color: #FFFFFF;
-    margin: 0;
+.category-header-banner h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .banner-badge {
-    background: rgba(212, 175, 55, 0.12);
-    border: 1px solid rgba(212, 175, 55, 0.35);
-    color: var(--champagne-light, #F3E5AB);
-    padding: 0.35rem 0.9rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background: rgba(200, 138, 117, 0.15); /* Soft Rose Gold Tint */
+  color: #c88a75;
+  border: 1px solid rgba(200, 138, 117, 0.3);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
-/* Glassmorphism Table Layout */
+
+/* ==========================================================================
+   GLASSMORPHISM & DESKTOP PRICE TABLE
+   ========================================================================== */
 .table-responsive {
-    overflow-x: auto;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-top: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #2d2d2d;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .price-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    min-width: 650px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
 }
 
 .price-table th {
-    background: rgba(24, 21, 29, 0.8);
-    color: var(--champagne, #D4AF37);
-    font-family: 'Playfair Display', serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    padding: 1.2rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background: #141414;
+  color: #c88a75; /* Rose Gold Headers */
+  padding: 18px 20px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #2d2d2d;
 }
 
 .price-table td {
-    padding: 1.35rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.12);
-    vertical-align: middle;
+  padding: 20px;
+  border-bottom: 1px solid #222222;
+  vertical-align: middle;
 }
 
 .price-table tr:last-child td {
-    border-bottom: none;
-}
-
-.price-table tr:hover td {
-    background: rgba(197, 133, 114, 0.05);
+  border-bottom: none;
 }
 
 .price-table td strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: #FFFFFF;
-    margin-bottom: 0.25rem;
+  display: block;
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 4px;
 }
 
 .price-table td p {
-    font-size: 0.84rem;
-    color: rgba(250, 247, 242, 0.75) !important;
-    line-height: 1.5;
-    margin: 0;
+  margin: 0;
+  font-size: 0.88rem;
+  color: #999999;
+  line-height: 1.4;
 }
 
-/* Badges & Tags Inside Table */
+/* BADGES & BUTTONS */
 .time-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.8rem;
-    color: rgba(250, 247, 242, 0.8);
-    background: rgba(18, 16, 22, 0.6);
-    padding: 0.35rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(197, 133, 114, 0.2);
-    white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #1f1f1f;
+  color: #cccccc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 .time-badge i {
-    color: var(--rose-gold-light, #E2A898);
+  color: #c88a75;
 }
 
 .price-tag {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--champagne, #D4AF37);
-    white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c88a75; /* Rose Gold Price Text */
+  white-space: nowrap;
 }
 
 .btn-table-book {
-    background: transparent;
-    border: 1px solid rgba(197, 133, 114, 0.4);
-    color: var(--rose-gold-light, #E2A898) !important;
-    padding: 0.45rem 1rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    display: inline-block;
+  display: inline-block;
+  background: #c88a75; /* Rose Gold CTA Button */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn-table-book:hover {
-    background: linear-gradient(135deg, var(--rose-gold, #C58572), var(--rose-gold-dark, #A46553));
-    color: #FFFFFF !important;
-    border-color: var(--rose-gold, #C58572);
+  background: #b37763;
+  box-shadow: 0 4px 12px rgba(200, 138, 117, 0.35);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .price-section {
-        padding: 3.5rem 1.25rem 4.5rem;
-    }
-    .category-header-banner {
-        padding: 1rem 1.25rem;
-    }
-    .price-table th, .price-table td {
-        padding: 1rem 1.25rem;
-    }
-}
-/* Note Card */
+
+/* ==========================================================================
+   PRICING FOOTER NOTE CARDS
+   ========================================================================== */
 .pricing-note-card {
-    margin-top: 1.5rem;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-radius: 16px;
-    padding: 1.25rem 1.75rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: rgba(250, 247, 242, 0.8);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #141414;
+  border: 1px solid #292929;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .pricing-note-card i {
-    color: var(--champagne, #D4AF37);
-    font-size: 1.25rem;
-    flex-shrink: 0;
+  color: #c88a75;
+  font-size: 1.2rem;
+  margin-top: 2px;
 }
 
 .pricing-note-card p {
-    margin: 0;
-    color: rgba(250, 247, 242, 0.85);
+  margin: 0;
+  font-size: 0.88rem;
+  color: #aaaaaa;
+  line-height: 1.5;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .category-header-banner {
-        padding: 1rem;
-    }
-    
-    .banner-title h3 {
-        font-size: 1.2rem;
-    }
 
-    .price-table th, 
-    .price-table td {
-        padding: 1rem;
-    }
-    
-    .pricing-note-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-}
-/* ==========================================
-   WEAVE PRICING SECTION - LUXURY STYLING
-   ========================================== */
+/* ==========================================================================
+   MOBILE RESPONSIVE STYLES (≤ 768px)
+   Converts tables into card layouts to prevent horizontal overflow
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Mobile Tab Navigation Grid */
+  .pricing-tabs-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
 
-.weave-pricing {
-    padding: 3rem 0;
-}
-
-.weave-pricing .container {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-/* Banner Header */
-.category-header-banner {
-    background: rgba(38, 32, 45, 0.85);
-    border: 1px solid rgba(197, 133, 114, 0.3);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 1.25rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.banner-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.banner-title i {
-    color: var(--champagne, #D4AF37);
-    font-size: 1.35rem;
-}
-
-.banner-title h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-.banner-badge {
-    background: rgba(212, 175, 55, 0.12);
-    border: 1px solid rgba(212, 175, 55, 0.35);
-    color: var(--champagne-light, #F3E5AB);
-    padding: 0.35rem 0.9rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Glassmorphism Table Container */
-.table-responsive {
-    overflow-x: auto;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-top: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
-}
-
-.price-table {
+  .pricing-tab-btn {
     width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    min-width: 650px;
-}
+    padding: 10px 8px;
+    font-size: 0.82rem;
+    justify-content: center;
+    box-sizing: border-box;
+  }
 
-.price-table th {
-    background: rgba(24, 21, 29, 0.8);
-    color: var(--champagne, #D4AF37);
-    font-family: 'Playfair Display', serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    padding: 1.2rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+  /* 2. Banner Adjustments */
+  .category-header-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+  }
 
-.price-table td {
-    padding: 1.35rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.12);
-    vertical-align: middle;
-}
+  .banner-badge {
+    align-self: flex-start;
+  }
 
-.price-table tr:last-child td {
-    border-bottom: none;
-}
-
-.price-table tr:hover td {
-    background: rgba(197, 133, 114, 0.05);
-}
-
-.price-table td strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: #FFFFFF;
-    margin-bottom: 0.25rem;
-}
-
-.price-table td p {
-    font-size: 0.84rem;
-    color: rgba(250, 247, 242, 0.75) !important;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Badges & Price Tags */
-.time-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.8rem;
-    color: rgba(250, 247, 242, 0.8);
-    background: rgba(18, 16, 22, 0.6);
-    padding: 0.35rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(197, 133, 114, 0.2);
-    white-space: nowrap;
-}
-
-.time-badge i {
-    color: var(--rose-gold-light, #E2A898);
-}
-
-.price-tag {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: var(--champagne, #D4AF37);
-    white-space: nowrap;
-}
-
-.btn-table-book {
+  /* 3. Hide Table Headers */
+  .table-responsive {
+    border: none;
     background: transparent;
-    border: 1px solid rgba(197, 133, 114, 0.4);
-    color: var(--rose-gold-light, #E2A898) !important;
-    padding: 0.45rem 1rem;
-    border-radius: 50px;
-    text-decoration: none;
+    backdrop-filter: none;
+    overflow-x: hidden;
+  }
+
+  .price-table thead {
+    display: none;
+  }
+
+  /* 4. Convert Table Rows into Mobile Cards */
+  .price-table, 
+  .price-table tbody, 
+  .price-table tr, 
+  .price-table td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .price-table tr {
+    margin-bottom: 16px;
+    background: #161616;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .price-table td {
+    padding: 6px 0;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  /* Title & Description Cell */
+  .price-table td:first-child {
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+  }
+
+  .price-table td strong {
+    font-size: 1.05rem;
+    color: #ffffff;
+  }
+
+  .price-table td p {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+  }
+
+  /* Inject Inline Labels for Duration and Price */
+  .price-table td:nth-child(2)::before {
+    content: "Duration: ";
     font-weight: 600;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
+    color: #888888;
+    margin-right: 6px;
+    font-size: 0.88rem;
+  }
 
-.btn-table-book:hover {
-    background: linear-gradient(135deg, var(--rose-gold, #C58572), var(--rose-gold-dark, #A46553));
-    color: #FFFFFF !important;
-    border-color: var(--rose-gold, #C58572);
-}
-
-/* Note Card */
-.pricing-note-card {
-    margin-top: 1.5rem;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-radius: 16px;
-    padding: 1.25rem 1.75rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: rgba(250, 247, 242, 0.8);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.pricing-note-card i {
-    color: var(--champagne, #D4AF37);
-    font-size: 1.25rem;
-    flex-shrink: 0;
-}
-
-.pricing-note-card p {
-    margin: 0;
-    color: rgba(250, 247, 242, 0.85);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .category-header-banner {
-        padding: 1rem;
-    }
-    
-    .banner-title h3 {
-        font-size: 1.2rem;
-    }
-
-    .price-table th, 
-    .price-table td {
-        padding: 1rem;
-    }
-    
-    .pricing-note-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-}
-/* ==========================================
-   WEAVE PRICING SECTION - LUXURY STYLING
-   ========================================== */
-
-.weave-pricing {
-    padding: 3rem 0;
-}
-
-.weave-pricing .container {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-/* Banner Header */
-.category-header-banner {
-    background: rgba(38, 32, 45, 0.85);
-    border: 1px solid rgba(197, 133, 114, 0.3);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 1.25rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.banner-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.banner-title i {
-    color: var(--champagne, #D4AF37);
-    font-size: 1.35rem;
-}
-
-.banner-title h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-.banner-badge {
-    background: rgba(212, 175, 55, 0.12);
-    border: 1px solid rgba(212, 175, 55, 0.35);
-    color: var(--champagne-light, #F3E5AB);
-    padding: 0.35rem 0.9rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
+  .price-table td:nth-child(3)::before {
+    content: "Starting Price: ";
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    color: #888888;
+    margin-right: 6px;
+    font-size: 0.88rem;
+  }
 
-/* Glassmorphism Table Container */
-.table-responsive {
-    overflow-x: auto;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-top: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
-}
+  /* Full-width Touch-Friendly Button */
+  .price-table td:last-child {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #2d2d2d;
+  }
 
-.price-table {
+  .btn-table-book {
+    display: block;
     width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    min-width: 650px;
-}
-
-.price-table th {
-    background: rgba(24, 21, 29, 0.8);
-    color: var(--champagne, #D4AF37);
-    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 12px 0;
     font-size: 0.95rem;
-    font-weight: 700;
-    padding: 1.2rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    box-sizing: border-box;
+  }
 
-.price-table td {
-    padding: 1.35rem 1.75rem;
-    border-bottom: 1px solid rgba(197, 133, 114, 0.12);
-    vertical-align: middle;
-}
-
-.price-table tr:last-child td {
-    border-bottom: none;
-}
-
-.price-table tr:hover td {
-    background: rgba(197, 133, 114, 0.05);
-}
-
-.price-table td strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    color: #FFFFFF;
-    margin-bottom: 0.25rem;
-}
-
-.price-table td p {
-    font-size: 0.84rem;
-    color: rgba(250, 247, 242, 0.75) !important;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Badges & Price Tags */
-.time-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.8rem;
-    color: rgba(250, 247, 242, 0.8);
-    background: rgba(18, 16, 22, 0.6);
-    padding: 0.35rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(197, 133, 114, 0.2);
-    white-space: nowrap;
-}
-
-.time-badge i {
-    color: var(--rose-gold-light, #E2A898);
-}
-
-.price-tag {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: var(--champagne, #D4AF37);
-    white-space: nowrap;
-}
-
-.btn-table-book {
-    background: transparent;
-    border: 1px solid rgba(197, 133, 114, 0.4);
-    color: var(--rose-gold-light, #E2A898) !important;
-    padding: 0.45rem 1rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.btn-table-book:hover {
-    background: linear-gradient(135deg, var(--rose-gold, #C58572), var(--rose-gold-dark, #A46553));
-    color: #FFFFFF !important;
-    border-color: var(--rose-gold, #C58572);
-}
-
-/* Note Card */
-.pricing-note-card {
-    margin-top: 1.5rem;
-    background: rgba(31, 27, 36, 0.75);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(197, 133, 114, 0.22);
-    border-radius: 16px;
-    padding: 1.25rem 1.75rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: rgba(250, 247, 242, 0.8);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.pricing-note-card i {
-    color: var(--champagne, #D4AF37);
-    font-size: 1.25rem;
-    flex-shrink: 0;
-}
-
-.pricing-note-card p {
-    margin: 0;
-    color: rgba(250, 247, 242, 0.85);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .category-header-banner {
-        padding: 1rem;
-    }
-    
-    .banner-title h3 {
-        font-size: 1.2rem;
-    }
-
-    .price-table th, 
-    .price-table td {
-        padding: 1rem;
-    }
-    
-    .pricing-note-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
+  /* Note Card Responsive Padding */
+  .pricing-note-card {
+    padding: 14px;
+  }
 }
 /* ==========================================
    BEAUTY PACKAGES - LUXURY STYLING
